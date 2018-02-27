@@ -9,6 +9,15 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="javascript.js"></script>
   <style>
+
+  body{
+    color: #fff;
+  }
+  .jumbotron{
+   /* height: 20vh !important;*/
+    margin: 0;
+    background-color: #263238;
+  }
   .width33{
     width: 33vw;
   }
@@ -17,20 +26,85 @@
     margin:0 auto;
   }
   p{ text-align: left; }
-  </style>
+  img{
+    opacity: 0.05;
+    filter: invert(100%);
+    /*position: absolute;
+    top: 0;
+    right: 0;
+    width: 20vh;*/
+    max-width: 400px;
+  }
+  h3{
+    display: inline-block;
+    color: #000a12;
+    font-size:  
+  }
+  .armario{
+    height: 80vh;
+    width: 100%;
+    display: none;
+  }
+  .gav{
+    height: 80vh;
+    width: 20px;
+    float: left;
+    background-color: #000a12;
+    border: solid 1px #4f5b62;
+    border-width: 0 1px;
+    text-align: center;
+    writing-mode: tb-rl;
+  }
+
+  .foot-nav{
+    display:none;
+  }
+</style>
 </head>
 <body>
   <div class="jumbotron">
     <div class="container text-center">
-      <h1>Thy Portfolio</h1>
+      <h3>Thy Portfolio</h3>
       <div class="center-self">
         <p class="width33">I just love playing and learning with new things. Mostly Arduino, arduino is fun. And coffee. Coffee is fun too. and legos...</p>
-        <p class="width33">This is obiously not finished, so... check in back again tomorrow.</p>
+        <p class="width33">This is obiously not finished, so... check in back again tomorrow. And here's something that someone else madethat youcan look at.</p>
         <img src="https://media.giphy.com/media/a9V7xwOOb89tC/giphy.gif" alt="loading animation"/>
       </div>
     </div>
   </div> 
 
-</body>
-</html>
+  <div>
+         <!--<div name="primaryColor" style="width= 200px; height= 200px; background-color: #263238">#263238</div>
+         <div name="primaryLightColor" style="width= 200px; height= 200px; background-color: #4f5b62">#4f5b62</div>
+         <div name="primaryDarkColor" style="width= 200px; height= 200px; background-color: #000a12">#000a12</div>
+         <div name="primaryTextColor" style="width= 200px; height= 200px; background-color: #ffffff">#ffffff</div>-->
+         <div class="armario">
+          <div class="gav gav-1">1</div>
+          <div class="gav gav-2">2</div>
+          <div class="gav gav-3">3</div>
+          <div class="gav gav-4">4</div>
+          <div class="gav gav-5">5</div>
+          <div class="gav gav-6">6</div>
+          <div class="gav gav-7">7</div>
+          <div class="gav gav-8">8</div>
+          <div class="gav gav-9">9</div>
+          <div class="gav gav-10">10</div>
+        </div>
+        <div class="foot-nav">
+          <h3>1.whoami</h3>
+          <h3>2.percurso - cronologia</h3>
+          <h3>3.Foto Felicidade</h3>
+          <h3>4.educação licenciatura - mestrado</h3>
+          <h3>5.Lamp Wave</h3>
+          <h3>6.mestrado - babelrock</h3>
+          <h3>7.mestrado - NotifyMe</h3>
+          <h3>8.mestrado - Current</h3>
+          <h3>9.myfriendsin</h3>
+          <h3>10.contact</h3>
+        </div>
+
+      </div>
+
+    </body>
+    </html>
 
