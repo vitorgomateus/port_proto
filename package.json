@@ -1,0 +1,8 @@
+{
+  "description": "Portefolio project",
+  "name": "portproto",
+  "version": "0.0.1",
+  "dependencies": {
+    "loading-animation": "0.0.2-a"
+  }
+}

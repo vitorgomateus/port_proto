@@ -7,25 +7,15 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="javascript.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="portproto.js"></script>
   <style>
 
   body{
+    background: #4f5b62;
     color: #fff;
+    text-align: left;
   }
-  .jumbotron{
-   /* height: 20vh !important;*/
-    margin: 0;
-    background-color: #263238;
-  }
-  .width33{
-    width: 33vw;
-  }
-  .center-self{
-    width: 33vw;
-    margin:0 auto;
-  }
-  p{ text-align: left; }
   img{
     opacity: 0.05;
     filter: invert(100%);
@@ -34,25 +24,47 @@
     right: 0;
     width: 20vh;
   }
-  h3{
+  h4{
+   /* text-align: left;*/
+  }
+
+  p{
+  }
+  .container{
+   /* height: 20vh !important;*/
+   width:100%;
+   margin: 0;
+   background-color: #263238;
+   padding: 15px;
+   text-align: left;
+   color: #fff;
+ }
+.center-self{
+  width: 33vw;
+  margin:0 auto;
+}
+
+.navers{
     display: inline-block;
     color: #000a12;
-    font-size:  
-  }
-  .armario{
-    height: 80vh;
-    width: 100%;
-  }
-  .gav{
-    height: 80vh;
-    width: 20px;
-    float: left;
-    background-color: #000a12;
-    border: solid 1px #4f5b62;
-    border-width: 0 1px;
-    text-align: center;
-    writing-mode: tb-rl;
-  }
+    font-size:  16px;
+    font-weight: 800;
+}
+
+.armario{
+  height: 80vh;
+  width: 100%;
+}
+.gav{
+  height: 80vh;
+  width: 20px;
+  float: right;
+  background-color: #000a12;
+  border: solid 1px #4f5b62;
+  border-width: 0 1px;
+  text-align: center;
+  writing-mode: tb-rl;
+}
 
 
   img{
@@ -65,56 +77,78 @@
   }
   .foot-nav{
     display:none;
-  }/*
-  .jumbotron{
-    background-image: url(https://media.giphy.com/media/a9V7xwOOb89tC/giphy.gif);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    background
-  }*/
-</style>
+    }
+    .gaveta{
+      display:none;
+    }
+  </style>
 </head>
 <body>
-  <div class="jumbotron">
-    <div class="container text-center">
-      <h3>Thy Portfolio</h3>
-      <div class="center-self">
-        <p class="width33">I just love playing and learning with new things. Mostly Arduino, arduino is fun. And coffee. Coffee is fun too. and legos...</p>
-        <p class="width33">This is obiously not finished, so... check in back again tomorrow. And here's something that someone else made that you can look at.</p>
-        
+
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-sm-4">
+        <h4>&nbsp;&nbsp;&nbsp;Thy Portfolio</h4>
+        <div class="center-self">
+          <p>I just love playing and learning with new things. Mostly Arduino, arduino is fun. And coffee.</p>
+          <p> Coffee is fun too. and legos...</p>
+          <p>This is obiously not finished, so... check in back again tomorrow. And here's something that someone else made that you can look at.</p>
+        </div>
       </div>
     </div>
-  </div> 
-<img src="https://media.giphy.com/media/a9V7xwOOb89tC/giphy.gif" alt="loading animation"/>
+  </div>
+  
+  <img src="https://media.giphy.com/media/a9V7xwOOb89tC/giphy.gif" alt="loading animation"/>
   <div>
          <!--<div name="primaryColor" style="width= 200px; height= 200px; background-color: #263238">#263238</div>
          <div name="primaryLightColor" style="width= 200px; height= 200px; background-color: #4f5b62">#4f5b62</div>
          <div name="primaryDarkColor" style="width= 200px; height= 200px; background-color: #000a12">#000a12</div>
          <div name="primaryTextColor" style="width= 200px; height= 200px; background-color: #ffffff">#ffffff</div>-->
          <div class="armario">
-          <div class="gav gav-1">1</div>
-          <div class="gav gav-2">2</div>
-          <div class="gav gav-3">3</div>
-          <div class="gav gav-4">4</div>
-          <div class="gav gav-5">5</div>
-          <div class="gav gav-6">6</div>
-          <div class="gav gav-7">7</div>
-          <div class="gav gav-8">8</div>
-          <div class="gav gav-9">9</div>
-          <div class="gav gav-10">10</div>
+          <div class="gav gav-han-1">1</div>
+          <div class="gav gav-han-2">2</div>
+          <div class="gav gav-han-3">3</div>
+          <div class="gav gav-han-4">4</div>
+          <div class="gav gav-han-5">5</div>
+          <div class="gav gav-han-6">6</div>
+          <div class="gav gav-han-7">7</div>
+          <div class="gav gav-han-8">8</div>
+          <div class="gav gav-han-9">9</div>
+          <div class="gav gav-han-10">10</div>
         </div>
         <div class="foot-nav">
-          <h3>1.whoami</h3>
-          <h3>2.percurso - cronologia</h3>
-          <h3>3.Foto Felicidade</h3>
-          <h3>4.educação licenciatura - mestrado</h3>
-          <h3>5.Lamp Wave</h3>
-          <h3>6.mestrado - babelrock</h3>
-          <h3>7.mestrado - NotifyMe</h3>
-          <h3>8.mestrado - Current</h3>
-          <h3>9.myfriendsin</h3>
-          <h3>10.contact</h3>
+          <h4 class="navers">1.whoami</h4>
+          <h4 class="navers">2.percurso - cronologia</h4>
+          <h4 class="navers">3.Foto Felicidade</h4>
+          <h4 class="navers">4.educação licenciatura - mestrado</h4>
+          <h4 class="navers">5.Lamp Wave</h4>
+          <h4 class="navers">6.mestrado - babelrock</h4>
+          <h4 class="navers">7.mestrado - NotifyMe</h4>
+          <h4 class="navers">8.mestrado - Current</h4>
+          <h4 class="navers">9.myfriendsin</h4>
+          <h4 class="navers">10.contact</h4>
+        </div>
+        <div class="gaveta gav-1">
+          <h4>whoami</h4>
+          <h4>2.percurso - cronologia</h4>
+          <h4>3.Foto Felicidade</h4>
+          <h4>4.educação licenciatura - mestrado</h4>
+          <h4>5.Lamp Wave</h4>
+          <h4>6.mestrado - babelrock</h4>
+          <h4>7.mestrado - NotifyMe</h4>
+          <h4>8.mestrado - Current</h4>
+          <h4>9.myfriendsin</h4>
+          <h4>10.contact</h4>
+        </div>
+        <div class="gaveta gav-2"></div>
+        <div class="gaveta gav-3"></div>
+        <div class="gaveta gav-4"></div>
+        <div class="gaveta gav-5"></div>
+        <div class="gaveta gav-6"></div>
+        <div class="gaveta gav-7"></div>
+        <div class="gaveta gav-8"></div>
+        <div class="gaveta gav-9"></div>
+        <div class="gaveta gav-10">
         </div>
 
       </div>
