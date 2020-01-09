@@ -1,9 +1,0 @@
-{
-  "description": "Portefolio project",
-  "name": "portproto",
-  "version": "0.0.1",
-  "dependencies": {
-    "jquery-mousewheel": "^3.1.13",
-    "loading-animation": "0.0.2-a"
-  }
-}
