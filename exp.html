@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<div class="col-md-5 p-lg-5 mx-auto my-5 text-left">
+  <style>
+    /* COLAPSE */
+    .try-toggle[aria-expanded=false]{
+      background: #eee;
+    }
+  </style>
+  <button class="btn btn-default try-toggle" type="button" data-toggle="collapse" data-target=".trya" aria-controls="trya" aria-expanded="true" aria-label="Toggle Things">
+    A
+  </button>
+  <button class="btn btn-default try-toggle" type="button" data-toggle="collapse" data-target=".tryb" aria-controls="tryb" aria-expanded="true" aria-label="Toggle Things">
+    B
+  </button>
+  <button class="btn btn-default try-toggle" type="button" data-toggle="collapse" data-target=".tryb, .trya" aria-controls="trya tryb" aria-expanded="true" aria-label="Toggle Things">
+    A,B
+  </button>
+  <button class="btn btn-default try-toggle" type="button" data-toggle="collapse" data-target=".tryb.trya" aria-controls="trya tryb" aria-expanded="true" aria-label="Toggle Things">
+    AB
+  </button>
+</div>
+<div class="col-md-5 p-lg-5 mx-auto my-5 text-left">
+  <button class="btn btn-secondary trya collapse show" >
+    AA
+  </button>
+  <button class="btn btn-secondary tryb collapse show" >
+    BB
+  </button>
+  <button class="btn btn-secondary trya tryb collapse show" >
+    AABB
+  </button>
+</div>
+</html>
