@@ -78,6 +78,79 @@
     .work-card-group .card{
       /*min-width: 200px;*/
     }
+
+
+    /* CORNER HOVER BUTTON */
+    .btn-corner-hover{
+      opacity: 0;
+      text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, .5);
+      height: 48px !important;
+      width: 48px !important;
+      border-radius: 24px;
+      box-shadow: 2px 4px 8px #00000088;
+      /*position: sticky;*/
+      position: fixed;
+      right: 24px !important;
+      bottom: 24px;
+      overflow: hidden;
+      -webkit-transition: width .3s ease-in-out, border-radius .4s ease-in-out, opacity .4s ease-in-out;
+      -moz-transition: width .3s ease-in-out, border-radius .4s ease-in-out, opacity .4s ease-in-out;
+      -o-transition: width .3s ease-in-out, border-radius .4s ease-in-out, opacity .4s ease-in-out;
+      transition: width .3s ease-in-out, border-radius .4s ease-in-out, opacity .4s ease-in-out;
+    }
+    .btn-corner-hover span{
+      position: absolute;
+      top: 10px;
+      left: 15px; 
+      vertical-align: text-bottom;
+      opacity: 0;
+      white-space: nowrap;
+      -webkit-transition: opacity .3s ease .3s;
+      transition: opacity .3s ease .3s;
+    }
+    .btn-corner-hover i{
+      position: absolute;
+      top: 0;
+      right: 0; 
+      padding: 10px 11px;
+      font-size: 22px;
+      background: #007bff;
+      -webkit-transition: border-radius .4s ease-in-out;
+      -moz-transition: border-radius .4s ease-in-out;
+      -o-transition: border-radius .4s ease-in-out;
+      transition: border-radius .4s ease-in-out;
+    }
+    .btn-corner-hover:hover, 
+    .btn-corner-hover:active, 
+    .btn-corner-hover:focus{
+      color: white !important;
+      width: 170px !important; 
+      border-radius: 18px;
+    }
+    .btn-corner-hover:hover span, 
+    .btn-corner-hover:active span, 
+    .btn-corner-hover:focus span {
+      /*display: inline-block;*/
+      opacity: 1;
+    }
+    .btn-corner-hover:hover i, 
+    .btn-corner-hover:active i, 
+    .btn-corner-hover:focus i {
+      background: #0069d9;
+      border-radius: 18px;
+    }
+
+    h2{
+      position: relative;
+    }
+    .badge-in-dev{
+      font-size: 14px;
+      vertical-align: super;
+      position: absolute;
+      top: 8px;
+      margin-left: 10px;
+    }
+
     @media (min-width: 576px){
       section h2{
         margin-bottom:1.5rem;
@@ -132,7 +205,7 @@
       <p class="lead">This is the online <i>Curriculum Vitae</i> for Vitor Gonçalves, a UX Designer from Portugal. He is nice. However, this page is still in development. In the meantime feel free to download the PDF or get in touch.<br><br>
       Thank you for passing by.</p>
       <a href="mailto:geral@umvitor.pt" class="btn btn-default mx-1"> <i class="fas fa-envelope"></i> Get in Touch</a>
-      <a href="res/vg-cv-en-2020.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary mx-1" download> <i class="fas fa-download"></i> Download PDF</a>
+      <a id="dl-btn-banner" href="res/vg-cv-en-2020.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary mx-1" download> <i class="fas fa-download"></i> Download PDF</a>
     </div>
     <div class="product-device shadow-sm d-none d-md-block"></div>
     <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
@@ -215,7 +288,7 @@
           <div class="card">
             <!-- <img src="..." class="card-img-top" alt="..."> -->
             <div class="card-header">
-              <h5 class="card-title">Mas in Multimedia Communication</h5>
+              <h5 class="card-title">Master's in Multimedia Communication</h5>
             </div>
             <div class="card-body">
               <h6>@ Universidade de Aveiro</h6>
@@ -226,7 +299,7 @@
           </div>
           <div class="card">
             <div class="card-header">
-              <h5 class="card-title">Bac in New Technologies of Communication</h5>
+              <h5 class="card-title">Bachelor's in New Technologies of Communication</h5>
             </div>
             <div class="card-body">
               <h6>@ Universidade de Aveiro</h6>
@@ -242,7 +315,7 @@
     
     <!-- OTHER -->
     <section id="other">
-      <h2>Projects*</h2>
+      <h2>Projects <span class="badge badge-warning badge-in-dev">in development</span></h2>
       <div class="px-lg-5 mx-auto my-5 mt-md-2 mb-md-5 pb-md-5 text-left">
         <div class="card-columns work-card-group">
           <div class="card">
@@ -322,8 +395,12 @@
     </section>
   </div>
 
+  <a href="res/vg-cv-en-2020.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-corner-hover" download>
+      <span> Download PDF </span>
+      <i class="fas fa-download"></i>
+  </a>
+
     <footer class="bg-dark p-3 p-lg-5">
-      <p>*<i>in construction</i></p>
       <p>updated in Jan 13, 2020</p>
     </footer>
 
@@ -331,6 +408,11 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+  <!-- Visible -->
+    <script type="text/javascript" src="res/visible/jquery.visible.js"></script>
+
 
   <!-- Scroll? -->
   <script>
@@ -344,6 +426,17 @@
            navMain.collapse('hide');
        });
    });
+
+    $(window).scroll(function() {
+        if ($('#dl-btn-banner').visible()) {
+            /*$('.btn-corner-hover').hide();*/
+            $(".btn-corner-hover").css({ opacity: 0 });
+        }else{
+            /*$('.btn-corner-hover').show();*/
+            $(".btn-corner-hover").css({ opacity: 1 });
+        }
+    });
+
     /*function scrollToAnchor(aid){
       var aTag = $("a[name='"+ aid +"']");
       $('html,body').animate({scrollTop: aTag.offset().top},'slow');
