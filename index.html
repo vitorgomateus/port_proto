@@ -567,7 +567,7 @@
   </a>
 
     <footer class="bg-dark p-3 p-lg-5">
-      <p>updated in Jan 13, 2020</p>
+      <p>updated Jan 18, 2020</p>
     </footer>
 
   <!-- Bootstrap -->
@@ -578,10 +578,13 @@
 
   <!-- Visible -->
     <script type="text/javascript" src="res/visible/jquery.visible.js"></script>
+  <!-- Moment -->
+    <script type="text/javascript" src="res/js/moment.js"></script>
 
 
   <!-- Scroll? -->
   <script>
+
     $('body').scrollspy({ target: '#my-navbar' });
 
     $(function(){ 
@@ -602,13 +605,10 @@
             $(".btn-corner-hover").css({ opacity: 1 });
         }
     });
-
-    /*function scrollToAnchor(aid){
-      var aTag = $("a[name='"+ aid +"']");
-      $('html,body').animate({scrollTop: aTag.offset().top},'slow');
-  }*/
-
-  /*scrollToAnchor('id3');*/
+    $(document).ready(function(){
+      var lm = moment(new Date(document.lastModified));
+      $('.last-modified').text(lm.fromNow(false, 'm'));
+    });
   </script>
 </body>
 </html>
