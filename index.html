@@ -143,7 +143,7 @@
       position: relative;
     }
     .badge-in-dev{
-      font-size: 14px;
+      font-size: 8px;
       vertical-align: super;
       position: absolute;
       top: 8px;
@@ -169,6 +169,9 @@
         -moz-column-count: 3;
         column-count: 3;
       }
+    }
+    @media print {
+      .cover{ display: none }
     }
   </style>
   <!-- Custom styles for this template 
@@ -198,7 +201,7 @@
   </nav>
 
 
-  <div class="position-relative overflow-hidden text-center bg-dark">
+  <div class="cover position-relative overflow-hidden text-center bg-dark">
     <div class="col-md-5 p-lg-5 mx-auto my-5">
       <h1 class="cover-heading">Hello fellow human.</h1>
       <p class="lead">This is the online <i>Curriculum Vitae</i> for Vitor Gonçalves, a UX Designer from Portugal. He is nice. However, this page is still in development. In the meantime feel free to download the PDF or get in touch.<br><br>
@@ -211,6 +214,89 @@
   </div>
   <div class="container"  data-spy="scroll" data-target="#my-navbar">
     
+    <!-- ABOUT -->
+    <style type="text/css">
+      #about>div{
+        max-width: 333px;
+      }
+      #about h2{
+        font-size: 1.6rem;
+      }
+      @media (min-width: 360px){
+        #about h2{
+          font-size: 2rem;
+        }
+      }
+      @media (min-width: 768px){
+      #about>div{
+        max-width: 690px;
+      }
+      }
+      .about-pic{
+        max-width: 250px;
+      }
+      .about-details{
+        color: #333;
+      }
+      .about-details tr td:first-child{
+        text-align: center;            
+        vertical-align: baseline;
+      }
+
+      .name-v, .name-g, .name-d { display: inline-block; }
+      .name-v, .name-g { color: #ffc42f; }
+      .name-v, .name-g {text-transform: uppercase;}
+      .name-g {
+        display: block;
+        font-size: 1.03rem;
+      }
+
+    </style>
+    <section id="about">
+      <div class="col-md-12 px-lg-5 my-5 my-md-2 mx-auto text-center">
+        <div class="row">
+
+          <div class="col-md-6 order-md-2">
+            <img class="about-pic" src="res/img/profile O sm.png" alt="profile photo">
+          </div>
+
+          <div class="col-md-6 order-md-1 text-left">
+            <h2>
+              <span class="name-v">Vitor</span>
+              <span class="name-d">UX Designer</span>
+              <span class="name-g">Gonçalves</span>
+            </h2>
+          <div class="about-details">
+            <table>
+              <tr>
+                <td><i class="fas fa-birthday-cake mr-1"></i></td>
+                <td>March, 1991</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-map-marker-alt mr-1"></i></td>
+                <td>Aveiro, Portugal</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-box-open mr-1"></i></td>
+                <td>Available to move anywhere in Europe</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-scroll mr-1"></i></td>
+                <td>Ms Multimedia Communication</td>
+              </tr>
+              </table>
+          </div>
+          <!-- <div class="about-details">
+            <span><i class="fas fa-birthday-cake mr-1"></i>March 28, 1991</span>
+            <span><i class="fas fa-map-marker-alt mr-1"></i>Aveiro, Portugal</span>
+            <span><i class="fas fa-box-open mr-1"></i>Available to move anywhere in Europe</span>
+          </div>-->
+          </div>
+
+
+        </div>   
+    </section>
+
     <!-- SKILLS -->
     <section id="skills">
       <h2>Skills</h2>
@@ -374,25 +460,33 @@
               <p class="card-text"><small class="text-muted">-</small></p>
             </div>
           </div>
-        </div>
 
+          <div class="card">
+            <img src="res/img/default.jpg" class="card-img-top" alt="placeholder image">  
+            <div class="card-body">
+              <h5 class="card-title">Babel Rock</h5>
+              <h6>Interactive Music-Playing Physical-Globe</h6>
+              <p class="card-text">
+              </p>
+              <p class="card-text"><small class="text-muted">-</small></p>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
-    
+
     <!-- CONTACTS -->
     <section id="contacts">
       <h2>Contacts</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-4 px-lg-5 my-5 mt-md-2 mb-md-5 pb-md-5 text-left">
-          <p><a href="https://www.linkedin.com/in/vitorgo/"> <i class="fab fa-linkedin"></i> Linked In</a></p>
-          <p><a href="mailto:geral@umvitor.pt"><i class="fa fa-envelope"></i> geral@umvitor.pt</a></p>
-        </div>
-        <!-- <div class="col-md-3 px-lg-5 my-5 mt-md-2 mb-md-5 pb-md-5 text-center">
-          <p>*<i>in construction</i></p>
-        </div> -->
-    </div>
+      <div class="px-lg-5 mx-auto my-5 mt-md-2 mb-md-5 pb-md-5 text-left">
+        <p><a href="https://www.linkedin.com/in/vitorgo/"> <i class="fab fa-linkedin"></i> Linked In</a></p>
+        <p><a href="mailto:geral@umvitor.pt"><i class="fa fa-envelope"></i> geral@umvitor.pt</a></p>
+      </div>
     </section>
+    
   </div>
+
 
   <a href="res/vg-cv-en-2020.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-corner-hover" download>
       <span> Download PDF </span>
