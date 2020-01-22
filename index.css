@@ -1,0 +1,183 @@
+/* ABOUT*/
+
+      #about>div{
+        max-width: 333px;
+      }
+      #about h2{
+        font-size: 1.6rem;
+      }
+      @media (min-width: 360px){
+        #about h2{
+          font-size: 2rem;
+        }
+      }
+      @media (min-width: 768px){
+      #about>div{
+        max-width: 690px;
+      }
+      }
+      .about-pic{
+        max-width: 250px;
+      }
+      .about-details{
+        color: #333;
+      }
+      .about-details tr td:first-child{
+        text-align: center;            
+        vertical-align: baseline;
+      }
+
+      .name-v, .name-g, .name-d { display: inline-block; }
+      .name-v, .name-g { color: #ffc42f; }
+      .name-v, .name-g {text-transform: uppercase;}
+      .name-g {
+        display: block;
+        font-size: 1.03rem;
+      }
+
+
+.faux-img-cards{
+	height: 180px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.faux-img-cards img{display:none;}
+
+
+subtle{ opacity:0.7; }
+    .o-2{ opacity:0.2;  }
+
+    .bg-dark{
+      color: #ddd;
+      text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+      box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+    }
+
+
+    /* LINKS */
+    a{
+      color: #333;
+    }
+    a:hover:not(.b-0), .bg-dark a:active:not(.b-0), .bg-dark a:focus:not(.b-0) {
+      color: #000;
+      text-decoration: none;
+      text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    }
+    .bg-dark a{
+      color: #ddd;
+    }
+    .bg-dark a:hover:not(.b-0), .bg-dark a:active:not(.b-0), .bg-dark a:focus:not(.b-0), .nav-link.active {
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 2px solid white;
+    }
+
+    /* SECTIONS */
+    section{
+      padding-top: 75px !important;
+    }
+
+    .lead{
+      font-size: 1.15rem;
+    }
+
+    .work-card-group .card{
+      /*min-width: 200px;*/
+    }
+
+
+    /* CORNER HOVER BUTTON */
+    .btn-corner-hover{
+      opacity: 0;
+      text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, .5);
+      height: 48px !important;
+      width: 48px !important;
+      border-radius: 24px;
+      box-shadow: 2px 4px 8px #00000088;
+      /*position: sticky;*/
+      position: fixed;
+      right: 24px !important;
+      bottom: 24px;
+      overflow: hidden;
+      -webkit-transition: width .3s ease-in-out, border-radius .4s ease-in-out, opacity .4s ease-in-out;
+      -moz-transition: width .3s ease-in-out, border-radius .4s ease-in-out, opacity .4s ease-in-out;
+      -o-transition: width .3s ease-in-out, border-radius .4s ease-in-out, opacity .4s ease-in-out;
+      transition: width .3s ease-in-out, border-radius .4s ease-in-out, opacity .4s ease-in-out;
+    }
+    .btn-corner-hover span{
+      position: absolute;
+      top: 10px;
+      left: 15px; 
+      vertical-align: text-bottom;
+      opacity: 0;
+      white-space: nowrap;
+      -webkit-transition: opacity .3s ease .3s;
+      transition: opacity .3s ease .3s;
+    }
+    .btn-corner-hover i{
+      position: absolute;
+      top: 0;
+      right: 0; 
+      padding: 10px 11px;
+      font-size: 22px;
+      background: #007bff;
+      -webkit-transition: border-radius .4s ease-in-out;
+      -moz-transition: border-radius .4s ease-in-out;
+      -o-transition: border-radius .4s ease-in-out;
+      transition: border-radius .4s ease-in-out;
+    }
+    .btn-corner-hover:hover, 
+    .btn-corner-hover:active, 
+    .btn-corner-hover:focus{
+      color: white !important;
+      width: 170px !important; 
+      border-radius: 18px;
+    }
+    .btn-corner-hover:hover span, 
+    .btn-corner-hover:active span, 
+    .btn-corner-hover:focus span {
+      /*display: inline-block;*/
+      opacity: 1;
+    }
+    .btn-corner-hover:hover i, 
+    .btn-corner-hover:active i, 
+    .btn-corner-hover:focus i {
+      background: #0069d9;
+      border-radius: 18px;
+    }
+
+    h2{
+      position: relative;
+    }
+    .badge-in-dev{
+      font-size: 8px;
+      vertical-align: super;
+      position: absolute;
+      top: 8px;
+      margin-left: 10px;
+    }
+
+    @media (min-width: 576px){
+      section h2{
+        margin-bottom:1.5rem;
+      }
+      .lead{
+        font-size: 1.25rem;
+      }
+      .work-card-group {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+      }
+    }
+    @media (min-width: 768px){
+      .work-card-group {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+      }
+    }
+    @media print {
+      .cover{ display: none }
+    }

@@ -47,144 +47,8 @@
     <link href="res/fa/css/brands.css" rel="stylesheet">-->
     <script src="https://kit.fontawesome.com/cd4ab06dd7.js" crossorigin="anonymous"></script>
 
-  <style>
-    subtle{ opacity:0.7; }
-    .o-2{ opacity:0.2;  }
+    <link href="index.css" rel="stylesheet">-->
 
-    .bg-dark{
-      color: #ddd;
-      text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-      box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
-    }
-
-
-    /* LINKS */
-    a{
-      color: #333;
-    }
-    a:hover:not(.b-0), .bg-dark a:active:not(.b-0), .bg-dark a:focus:not(.b-0) {
-      color: #000;
-      text-decoration: none;
-      text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-    }
-    .bg-dark a{
-      color: #ddd;
-    }
-    .bg-dark a:hover:not(.b-0), .bg-dark a:active:not(.b-0), .bg-dark a:focus:not(.b-0), .nav-link.active {
-      color: #fff;
-      text-decoration: none;
-      border-bottom: 2px solid white;
-    }
-
-    /* SECTIONS */
-    section{
-      padding-top: 75px !important;
-    }
-
-    .lead{
-      font-size: 1.15rem;
-    }
-
-    .work-card-group .card{
-      /*min-width: 200px;*/
-    }
-
-
-    /* CORNER HOVER BUTTON */
-    .btn-corner-hover{
-      opacity: 0;
-      text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, .5);
-      height: 48px !important;
-      width: 48px !important;
-      border-radius: 24px;
-      box-shadow: 2px 4px 8px #00000088;
-      /*position: sticky;*/
-      position: fixed;
-      right: 24px !important;
-      bottom: 24px;
-      overflow: hidden;
-      -webkit-transition: width .3s ease-in-out, border-radius .4s ease-in-out, opacity .4s ease-in-out;
-      -moz-transition: width .3s ease-in-out, border-radius .4s ease-in-out, opacity .4s ease-in-out;
-      -o-transition: width .3s ease-in-out, border-radius .4s ease-in-out, opacity .4s ease-in-out;
-      transition: width .3s ease-in-out, border-radius .4s ease-in-out, opacity .4s ease-in-out;
-    }
-    .btn-corner-hover span{
-      position: absolute;
-      top: 10px;
-      left: 15px; 
-      vertical-align: text-bottom;
-      opacity: 0;
-      white-space: nowrap;
-      -webkit-transition: opacity .3s ease .3s;
-      transition: opacity .3s ease .3s;
-    }
-    .btn-corner-hover i{
-      position: absolute;
-      top: 0;
-      right: 0; 
-      padding: 10px 11px;
-      font-size: 22px;
-      background: #007bff;
-      -webkit-transition: border-radius .4s ease-in-out;
-      -moz-transition: border-radius .4s ease-in-out;
-      -o-transition: border-radius .4s ease-in-out;
-      transition: border-radius .4s ease-in-out;
-    }
-    .btn-corner-hover:hover, 
-    .btn-corner-hover:active, 
-    .btn-corner-hover:focus{
-      color: white !important;
-      width: 170px !important; 
-      border-radius: 18px;
-    }
-    .btn-corner-hover:hover span, 
-    .btn-corner-hover:active span, 
-    .btn-corner-hover:focus span {
-      /*display: inline-block;*/
-      opacity: 1;
-    }
-    .btn-corner-hover:hover i, 
-    .btn-corner-hover:active i, 
-    .btn-corner-hover:focus i {
-      background: #0069d9;
-      border-radius: 18px;
-    }
-
-    h2{
-      position: relative;
-    }
-    .badge-in-dev{
-      font-size: 8px;
-      vertical-align: super;
-      position: absolute;
-      top: 8px;
-      margin-left: 10px;
-    }
-
-    @media (min-width: 576px){
-      section h2{
-        margin-bottom:1.5rem;
-      }
-      .lead{
-        font-size: 1.25rem;
-      }
-      .work-card-group {
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
-        column-count: 2;
-      }
-    }
-    @media (min-width: 768px){
-      .work-card-group {
-        -webkit-column-count: 3;
-        -moz-column-count: 3;
-        column-count: 3;
-      }
-    }
-    @media print {
-      .cover{ display: none }
-    }
-  </style>
   <!-- Custom styles for this template 
     <link href="cover.css" rel="stylesheet">-->
   </head>
@@ -201,9 +65,8 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarItems">
-        <a class="nav-link py-2 mx-2" href="#skills">Skills</a>
         <a class="nav-link py-2 mx-2" href="#work">Work</a>
-        <a class="nav-link py-2 mx-2" href="#other">Projects</a>
+        <a class="nav-link py-2 mx-2" href="#projects">Projects</a>
         <a class="nav-link py-2 mx-2" href="#contacts">Contacts</a>
       <!--<div class="container">justify-content-between
         data-toggle="collapse" data-target="#navbarItems" 
@@ -226,43 +89,6 @@
   <div class="container"  data-spy="scroll" data-target="#my-navbar">
     
     <!-- ABOUT -->
-    <style type="text/css">
-      #about>div{
-        max-width: 333px;
-      }
-      #about h2{
-        font-size: 1.6rem;
-      }
-      @media (min-width: 360px){
-        #about h2{
-          font-size: 2rem;
-        }
-      }
-      @media (min-width: 768px){
-      #about>div{
-        max-width: 690px;
-      }
-      }
-      .about-pic{
-        max-width: 250px;
-      }
-      .about-details{
-        color: #333;
-      }
-      .about-details tr td:first-child{
-        text-align: center;            
-        vertical-align: baseline;
-      }
-
-      .name-v, .name-g, .name-d { display: inline-block; }
-      .name-v, .name-g { color: #ffc42f; }
-      .name-v, .name-g {text-transform: uppercase;}
-      .name-g {
-        display: block;
-        font-size: 1.03rem;
-      }
-
-    </style>
     <section id="about">
       <div class="col-md-12 px-lg-5 my-5 my-md-2 mx-auto text-center">
         <div class="row">
@@ -309,8 +135,7 @@
     </section>
 
     <!-- SKILLS -->
-    <section id="skills">
-      <h2>Skills</h2>
+    <section id="skills" class="pt-1">
       <div class="col-md-12 px-lg-5 mx-auto my-5 my-md-2 text-center">
         <h5>
           <span class="badge badge-pill badge-dark">photography capture and editing</span> 
@@ -340,6 +165,8 @@
 
         <div class="card-columns work-card-group">
           <div class="card">
+            <div class="card-img faux-img-cards" style="">
+            </div>
             <!-- <img src="..." class="card-img-top" alt="..."> -->
             <div class="card-header">
               <h5 class="card-title">UX Designer</h5>
@@ -359,6 +186,8 @@
             </div>
           </div>
           <div class="card">
+            <div class="card-img faux-img-cards" style="">
+            </div>
             <div class="card-header">
               <h5 class="card-title">Digital Communication</h5>
             </div>
@@ -372,6 +201,8 @@
             </div>
           </div>
           <div class="card">
+            <div class="card-img faux-img-cards" style="">
+            </div>
             <div class="card-header">
               <h5 class="card-title">Photographer</h5>
             </div>
@@ -450,14 +281,15 @@
       </div>
     </section>
     
-    <!-- OTHER -->
-    <section id="other">
+    <!-- PROJECTS -->
+    <section id="projects">
       <h2>Projects <span class="badge badge-warning badge-in-dev">in development</span></h2>
       <div class="px-lg-5 mx-auto my-5 mt-md-2 mb-md-5 pb-md-5 text-left">
         <div class="card-columns work-card-group">
           <div class="card">
-            <!-- <img src="..." class="card-img-top" alt="..."> -->
-            <img src="res/img/default.jpg" class="card-img-top" alt="placeholder image">
+            <div class="card-img faux-img-cards" style="background-image: url('res/img/bdt-feira-2.jpg')">
+              <img src="res/img/bdt-feira-2.jpg" class="card-img-top" alt="Image of Banco de Tempo de Feira">
+            </div>
             <div class="card-body">
               <h5 class="card-title">Banco de Tempo de Santa Maria da Feira</h5>
               <h6>Project for Master's dissertation</h6>
@@ -476,7 +308,9 @@
           </div>
 
           <div class="card">
+            <div class="card-img faux-img-cards" style="background-image: url('res/img/8 80 thumbnail x720.png')">
             <img src="res/img/8 80 thumbnail x720.png" class="card-img-top" alt="8/80 shortmovie thumbnail">
+            </div>
             <!-- <div class="card-header">
             </div>-->
             <div class="card-body">
@@ -491,7 +325,9 @@
           </div>
 
           <div class="card">
-            <img src="res/img/default.jpg" class="card-img-top" alt="placeholder image">
+            <div class="card-img faux-img-cards" style="background-image: url('res/img/web_hi_res_512.png')">
+              <img src="res/img/web_hi_res_512.png" class="card-img-top" alt="Notify Me project logo">
+            </div>
             <div class="card-body">
               <h5 class="card-title">Notify Me</h5>
               <h6>Application for Master's</h6>
@@ -511,9 +347,11 @@
           </div>
 
           <div class="card">
+            <div class="card-img faux-img-cards" style="background-image: url('res/img/default.jpg')">
             <img src="res/img/default.jpg" class="card-img-top" alt="placeholder image">
+            </div>
             <div class="card-body">
-              <h5 class="card-title">Ninhos de Arouca</h5>
+              <h5 class="card-title">Geo Freita</h5>
               <h6>Application for Bachelor's</h6>
               <p class="card-text">
                 <span class="badge badge-pill badge-dark">vector design</span> 
@@ -521,7 +359,7 @@
                 <br>
                 <span class="badge badge-pill badge-dark">UI design</span> 
                 <span class="badge badge-pill badge-dark">HTML/ CSS/ Javascript</span> 
-                <span class="badge badge-pill badge-dark">Cordoba</span>
+                <span class="badge badge-pill badge-dark">PhoneGap</span>
                 <span class="badge badge-pill badge-dark">Geolocation</span>
               </p>
               <p class="card-text"><small class="text-muted">-</small></p>
@@ -529,7 +367,9 @@
           </div>
 
           <div class="card">
+            <div class="card-img faux-img-cards" style="background-image: url('res/img/default.jpg')">
             <img src="res/img/default.jpg" class="card-img-top" alt="placeholder image">  
+            </div>
             <div class="card-body">
               <h5 class="card-title">Tilt Game - Feira de Março</h5>
               <h6>Video Game with Lampwave Studio</h6>
@@ -543,7 +383,9 @@
           </div>
 
           <div class="card">
+            <div class="card-img faux-img-cards" style="background-image: url('res/img/default.jpg')">
             <img src="res/img/default.jpg" class="card-img-top" alt="placeholder image">  
+            </div>
             <div class="card-body">
               <h5 class="card-title">Babel Rock</h5>
               <h6>Interactive Music-Playing Physical-Globe</h6>
