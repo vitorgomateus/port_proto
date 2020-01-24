@@ -47,13 +47,13 @@
     <link href="res/fa/css/brands.css" rel="stylesheet">-->
     <script src="https://kit.fontawesome.com/cd4ab06dd7.js" crossorigin="anonymous"></script>
 
-    <link href="index.css" rel="stylesheet">-->
+    <link href="index.css" rel="stylesheet">
 
   <!-- Custom styles for this template 
     <link href="cover.css" rel="stylesheet">-->
   </head>
 
-<body class="text-center">
+<body class="text-center" data-spy="scroll" data-target="#my-navbar">
   <nav id="my-navbar" class="navbar navbar-expand-md navbar-dark sticky-top bg-dark">
     <a class="py-2 mr-5 b-0" href="#" aria-label="top">
       <h3 class="p-0 m-0">
@@ -64,9 +64,9 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarItems">
-        <a class="nav-link py-2 mx-2" href="#work">Work</a>
-        <a class="nav-link py-2 mx-2" href="#projects">Projects</a>
+    <div class="collapse navbar-collapse text-right" id="navbarItems">
+        <a class="nav-link py-2 mx-2" href="#work">CV</a>
+        <a class="nav-link py-2 mx-2" href="projects.html">Projects</a>
         <a class="nav-link py-2 mx-2" href="#contacts">Contacts</a>
       <!--<div class="container">justify-content-between
         data-toggle="collapse" data-target="#navbarItems" 
@@ -78,7 +78,7 @@
   <div class="cover position-relative overflow-hidden text-center bg-dark">
     <div class="col-md-5 p-lg-5 mx-auto my-5">
       <h1 class="cover-heading">Hello fellow human.</h1>
-      <p class="lead">This is the online <i>Curriculum Vitae</i> for Vitor Gonçalves, a UX Designer from Portugal. He is nice. However, this page is still in development. In the meantime feel free to download the PDF or get in touch.<br><br>
+      <p class="lead">This is the online <i>Curriculum Vitae</i> for Vitor Gonçalves, a UX Designer from Portugal. He is nice. <br> This CV is undertaking some fine-tuning, but in the meantime feel free to download the PDF or get in touch.<br><br>
       Thank you for passing by.</p>
       <a href="mailto:geral@umvitor.pt" class="btn btn-default mx-1"> <i class="fas fa-envelope"></i> Get in Touch</a>
       <a id="dl-btn-banner" href="res/vg-cv-en-2020.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary mx-1" download> <i class="fas fa-download"></i> Download PDF</a>
@@ -86,7 +86,7 @@
     <div class="product-device shadow-sm d-none d-md-block"></div>
     <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
   </div>
-  <div class="container"  data-spy="scroll" data-target="#my-navbar">
+  <div class="container-fluid  container-about">
     
     <!-- ABOUT -->
     <section id="about">
@@ -135,7 +135,7 @@
     </section>
 
     <!-- SKILLS -->
-    <section id="skills" class="pt-1">
+    <section class="pt-1">
       <div class="col-md-12 px-lg-5 mx-auto my-5 my-md-2 text-center">
         <h5>
           <span class="badge badge-pill badge-dark">photography capture and editing</span> 
@@ -153,74 +153,75 @@
         </h5> 
       </p>
       </div>
-
-     
-
     </section>
 
-    <!-- WORK -->
+  </div>
+    <!-- WORK & EDUCATION -->
+  <div class="container" id="vitor-cv">
     <section id="work">
       <h2>Work</h2>
       <div class="px-lg-5 mx-auto my-5 mt-md-2 mb-md-5 pb-md-5 text-left">
+        <!-- card-group-xs-2-md-3 -->
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 pb-2">
+            <div class="card">
+              <!-- <img src="..." class="card-img-top" alt="..."> -->
+              <div class="card-header">
+                <h5 class="card-title">UX Designer</h5>
+              </div>
+              <div class="card-body">
+                <a href="https://www.linkedin.com/company/watgrid/"><h6>@ Watgrid </h6></a>
+                <p class="card-text">
+                  Very inovative and disruptive project in applying digital technologies to wine monitoring. My work wost mostly focused on UX Design and Development but also helped with digital communication. Was an amazing opportunity to develop teamwork skills and to work on a large scale project improving on adaptability as well as on technical skills.
+                </p>
+                <span class="badge badge-pill badge-dark">vector design</span> 
+                <span class="badge badge-pill badge-dark">AngularJS</span> 
+                <span class="badge badge-pill badge-dark">fast prototyping</span> 
+                <span class="badge badge-pill badge-dark">user research</span> 
+                <span class="badge badge-pill badge-dark">usability testing</span>
+                <span class="badge badge-pill badge-dark">google analytics</span>
+                <p class="card-text"><small class="text-muted">(1y 7mo) Jun 18 - Dec 19</small></p>
+              </div>
+            </div>
+          </div>
 
-        <div class="card-columns work-card-group">
-          <div class="card">
-            <div class="card-img faux-img-cards" style="">
-            </div>
-            <!-- <img src="..." class="card-img-top" alt="..."> -->
-            <div class="card-header">
-              <h5 class="card-title">UX Designer</h5>
-            </div>
-            <div class="card-body">
-              <a href="https://www.linkedin.com/company/watgrid/"><h6>@ Watgrid </h6></a>
-              <p class="card-text">
-                Very inovative and disruptive project in applying digital technologies to wine monitoring. My work wost mostly focused on UX Design and Development but also helped with digital communication. Was an amazing opportunity to develop teamwork skills and to work on a large scale project improving on adaptability as well as on technical skills.
-              </p>
-              <span class="badge badge-pill badge-dark">vector design</span> 
-              <span class="badge badge-pill badge-dark">AngularJS</span> 
-              <span class="badge badge-pill badge-dark">fast prototyping</span> 
-              <span class="badge badge-pill badge-dark">user research</span> 
-              <span class="badge badge-pill badge-dark">usability testing</span>
-              <span class="badge badge-pill badge-dark">google analytics</span>
-              <p class="card-text"><small class="text-muted">(1y 7mo) Jun 18 - Dec 19</small></p>
+          <div class="col-12 col-md-6 col-lg-4 pb-2">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title">Digital Communication</h5>
+              </div>
+              <div class="card-body">
+                <a href="https://myfriendsinportugal.com/"><h6>@ My Friends In </h6></a>
+                <p class="card-text">Amazing experience as part of a small team in a young start-up. The team was friendly and we all pitched in for the challenges that are always part of a start-up. My work was focused on frontend by working with Wordpress, and finetuning in the PHP code. also contributed to video and graphical in digital communication.</p>
+                <span class="badge badge-pill badge-dark">vector design</span> 
+                <span class="badge badge-pill badge-dark">Wordpress</span> 
+                <span class="badge badge-pill badge-dark">branding</span> 
+                <p class="card-text"><small class="text-muted">(11mo) Mar 17 - Jan 18</small></p>
+              </div>
             </div>
           </div>
-          <div class="card">
-            <div class="card-img faux-img-cards" style="">
-            </div>
-            <div class="card-header">
-              <h5 class="card-title">Digital Communication</h5>
-            </div>
-            <div class="card-body">
-              <a href="https://myfriendsinportugal.com/"><h6>@ My Friends In </h6></a>
-              <p class="card-text">Amazing experience as part of a small team in a young start-up. The team was friendly and we all pitched in for the challenges that are always part of a start-up. My work was focused on frontend by working with Wordpress, and finetuning in the PHP code. also contributed to video and graphical in digital communication.</p>
-              <span class="badge badge-pill badge-dark">vector design</span> 
-              <span class="badge badge-pill badge-dark">Wordpress</span> 
-              <span class="badge badge-pill badge-dark">branding</span> 
-              <p class="card-text"><small class="text-muted">(11mo) Mar 17 - Jan 18</small></p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-img faux-img-cards" style="">
-            </div>
-            <div class="card-header">
-              <h5 class="card-title">Photographer</h5>
-            </div>
-            <div class="card-body">
-              <a href="https://www.fotofelicidade.com/"><h6>@ Foto Felicidade </h6></a>
-              <p class="card-text">
-                Job included:
-                <ul>
-                  <li>weddings and other similar social events;</li>
-                  <li>studio photo sessions;</li>
-                  <li>outdoors photo sessions;</li>
-                  <li>photo and video coverage of events such as concerts, popular festivals, and rampshows.</li>
-                </ul>
-              </p>
-              <span class="badge badge-pill badge-dark">photography capture and editing</span> 
-              <span class="badge badge-pill badge-dark">vector design</span> 
-              <span class="badge badge-pill badge-dark">digital composition</span> 
-              <p class="card-text"><small class="text-muted">(10y) 2007 - 2017</small></p>
+
+          <div class="col-12 col-md-6 col-lg-4 pb-2">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title">Photographer</h5>
+              </div>
+              <div class="card-body">
+                <a href="https://www.fotofelicidade.com/"><h6>@ Foto Felicidade </h6></a>
+                <p class="card-text">
+                  Job included:
+                  <ul>
+                    <li>weddings and other similar social events;</li>
+                    <li>studio photo sessions;</li>
+                    <li>outdoors photo sessions;</li>
+                    <li>photo and video coverage of events such as concerts, popular festivals, and rampshows.</li>
+                  </ul>
+                </p>
+                <span class="badge badge-pill badge-dark">photography capture and editing</span> 
+                <span class="badge badge-pill badge-dark">vector design</span> 
+                <span class="badge badge-pill badge-dark">digital composition</span> 
+                <p class="card-text"><small class="text-muted">(10y) 2007 - 2017</small></p>
+              </div>
             </div>
           </div>
         </div>
@@ -232,48 +233,54 @@
     <section id="education">
       <h2>Education</h2>
       <div class="px-lg-5 mx-auto my-5 mt-md-2 mb-md-5 pb-md-5 text-left">
-        <div class="card-columns work-card-group">
-          <div class="card">
-            <!-- <img src="..." class="card-img-top" alt="..."> -->
-            <div class="card-header">
-              <h5 class="card-title">Master's in Multimedia Communication</h5>
-            </div>
-            <div class="card-body">
-              <h6>@ Universidade de Aveiro</h6>
-              <p class="card-text">
-                <span class="badge badge-pill badge-dark">UI design</span> 
-                <span class="badge badge-pill badge-dark">HTML/ CSS/ Javascript</span> 
-                <span class="badge badge-pill badge-dark">React+Redux</span> 
-                <br>
-                <span class="badge badge-pill badge-dark">Unity 3D</span> 
-                <span class="badge badge-pill badge-dark">Arduino</span> 
-                <br>
-                <span class="badge badge-pill badge-dark">fast prototyping</span> 
-                <span class="badge badge-pill badge-dark">user research</span> 
-                <span class="badge badge-pill badge-dark">usability testing</span>
-              </p>
-              <p class="card-text"><small class="text-muted">2019</small></p>
+        <div class="row">
+
+          <div class="col-12 col-md-6 col-lg-4 pb-2">
+            <div class="card">
+              <!-- <img src="..." class="card-img-top" alt="..."> -->
+              <div class="card-header">
+                <h5 class="card-title">Master's in Multimedia Communication</h5>
+              </div>
+              <div class="card-body">
+                <h6>@ Universidade de Aveiro</h6>
+                <p class="card-text">
+                  <span class="badge badge-pill badge-dark">UI design</span> 
+                  <span class="badge badge-pill badge-dark">HTML/ CSS/ Javascript</span> 
+                  <span class="badge badge-pill badge-dark">React+Redux</span> 
+                  <br>
+                  <span class="badge badge-pill badge-dark">Unity 3D</span> 
+                  <span class="badge badge-pill badge-dark">Arduino</span> 
+                  <br>
+                  <span class="badge badge-pill badge-dark">fast prototyping</span> 
+                  <span class="badge badge-pill badge-dark">user research</span> 
+                  <span class="badge badge-pill badge-dark">usability testing</span>
+                </p>
+                <p class="card-text"><small class="text-muted">2019</small></p>
+              </div>
             </div>
           </div>
-          <div class="card">
-            <div class="card-header">
-              <h5 class="card-title">Bachelor's in New Technologies of Communication</h5>
-            </div>
-            <div class="card-body">
-              <h6>@ Universidade de Aveiro</h6>
-              <p class="card-text">
-                <span class="badge badge-pill badge-dark">photography capture and editing</span> 
-                <span class="badge badge-pill badge-dark">3D modeling and animation</span> 
-                <span class="badge badge-pill badge-dark">video-game development</span>
-                <br>
-                <span class="badge badge-pill badge-dark">vector design</span> 
-                <span class="badge badge-pill badge-dark">digital composition</span> 
-                <br>
-                <span class="badge badge-pill badge-dark">UI design</span> 
-                <span class="badge badge-pill badge-dark">HTML/ CSS/ Javascript</span> 
-                <span class="badge badge-pill badge-dark">Cordoba</span>
-              </p>
-              <p class="card-text"><small class="text-muted">2014</small></p>
+
+          <div class="col-12 col-md-6 col-lg-4 pb-2">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title">Bachelor's in New Technologies of Communication</h5>
+              </div>
+              <div class="card-body">
+                <h6>@ Universidade de Aveiro</h6>
+                <p class="card-text">
+                  <span class="badge badge-pill badge-dark">photography capture and editing</span> 
+                  <span class="badge badge-pill badge-dark">3D modeling and animation</span> 
+                  <span class="badge badge-pill badge-dark">video-game development</span>
+                  <br>
+                  <span class="badge badge-pill badge-dark">vector design</span> 
+                  <span class="badge badge-pill badge-dark">digital composition</span> 
+                  <br>
+                  <span class="badge badge-pill badge-dark">UI design</span> 
+                  <span class="badge badge-pill badge-dark">HTML/ CSS/ Javascript</span> 
+                  <span class="badge badge-pill badge-dark">Cordoba</span>
+                </p>
+                <p class="card-text"><small class="text-muted">2014</small></p>
+              </div>
             </div>
           </div>
         </div>
@@ -281,132 +288,15 @@
       </div>
     </section>
     
-    <!-- PROJECTS -->
-    <section id="projects">
-      <h2>Projects <span class="badge badge-warning badge-in-dev">in development</span></h2>
-      <div class="px-lg-5 mx-auto my-5 mt-md-2 mb-md-5 pb-md-5 text-left">
-        <div class="card-columns work-card-group">
-          <div class="card">
-            <div class="card-img faux-img-cards" style="background-image: url('res/img/bdt-feira-2.jpg')">
-              <img src="res/img/bdt-feira-2.jpg" class="card-img-top" alt="Image of Banco de Tempo de Feira">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Banco de Tempo de Santa Maria da Feira</h5>
-              <h6>Project for Master's dissertation</h6>
-              <p class="card-text">
-                <span class="badge badge-pill badge-dark">UI design</span> 
-                <span class="badge badge-pill badge-dark">HTML/ CSS/ Javascript</span> 
-                <span class="badge badge-pill badge-dark">Wordpress</span> 
-                <br>
-                <span class="badge badge-pill badge-dark">fast prototyping</span> 
-                <span class="badge badge-pill badge-dark">user research</span> 
-                <span class="badge badge-pill badge-dark">usability testing</span>
-                <span class="badge badge-pill badge-dark">Adobe XD</span> 
-              </p>
-              <p class="card-text"><small class="text-muted">2019</small></p>
-            </div>
-          </div>
 
-          <div class="card">
-            <div class="card-img faux-img-cards" style="background-image: url('res/img/8 80 thumbnail x720.png')">
-            <img src="res/img/8 80 thumbnail x720.png" class="card-img-top" alt="8/80 shortmovie thumbnail">
-            </div>
-            <!-- <div class="card-header">
-            </div>-->
-            <div class="card-body">
-              <h5 class="card-title">8/80</h5>
-              <h6>Photography Director in a Shortmovie for bachelor's</h6>
-              <p class="card-text">
-                <span class="badge badge-pill badge-dark">Video capture and editing</span> 
-                <span class="badge badge-pill badge-dark">Script writing</span> 
-              </p>
-              <p class="card-text"><small class="text-muted">-</small></p>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-img faux-img-cards" style="background-image: url('res/img/web_hi_res_512.png')">
-              <img src="res/img/web_hi_res_512.png" class="card-img-top" alt="Notify Me project logo">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Notify Me</h5>
-              <h6>Application for Master's</h6>
-              <p class="card-text">
-                <span class="badge badge-pill badge-dark">UI design</span> 
-                <span class="badge badge-pill badge-dark">HTML/ CSS/ Javascript</span> 
-                <span class="badge badge-pill badge-dark">React+Redux</span> 
-                <br>
-                <span class="badge badge-pill badge-dark">Arduino</span> 
-                <span class="badge badge-pill badge-dark">Bluetooth</span> 
-                <br>
-                <span class="badge badge-pill badge-dark">fast prototyping</span> 
-                <span class="badge badge-pill badge-dark">usability testing</span>
-              </p>
-              <p class="card-text"><small class="text-muted">-</small></p>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-img faux-img-cards" style="background-image: url('res/img/default.jpg')">
-            <img src="res/img/default.jpg" class="card-img-top" alt="placeholder image">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Geo Freita</h5>
-              <h6>Application for Bachelor's</h6>
-              <p class="card-text">
-                <span class="badge badge-pill badge-dark">vector design</span> 
-                <span class="badge badge-pill badge-dark">digital composition</span> 
-                <br>
-                <span class="badge badge-pill badge-dark">UI design</span> 
-                <span class="badge badge-pill badge-dark">HTML/ CSS/ Javascript</span> 
-                <span class="badge badge-pill badge-dark">PhoneGap</span>
-                <span class="badge badge-pill badge-dark">Geolocation</span>
-              </p>
-              <p class="card-text"><small class="text-muted">-</small></p>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-img faux-img-cards" style="background-image: url('res/img/default.jpg')">
-            <img src="res/img/default.jpg" class="card-img-top" alt="placeholder image">  
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Tilt Game - Feira de Março</h5>
-              <h6>Video Game with Lampwave Studio</h6>
-              <p class="card-text">
-                <span class="badge badge-pill badge-dark">vector design</span>  
-                <span class="badge badge-pill badge-dark">video-game design</span>
-                <span class="badge badge-pill badge-dark">UI design</span> 
-              </p>
-              <p class="card-text"><small class="text-muted">-</small></p>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-img faux-img-cards" style="background-image: url('res/img/default.jpg')">
-            <img src="res/img/default.jpg" class="card-img-top" alt="placeholder image">  
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Babel Rock</h5>
-              <h6>Interactive Music-Playing Physical-Globe</h6>
-              <p class="card-text">
-                <span class="badge badge-pill badge-dark">Arduino</span> 
-                <span class="badge badge-pill badge-dark">3D printing</span>
-              </p>
-              <p class="card-text"><small class="text-muted">-</small></p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
+  </div>
     <!-- CONTACTS -->
+  <div class="container">
     <section id="contacts">
       <h2>Contacts</h2>
       <div class="row">
         <div class="col-sm-4 pb-md-5 px-lg-5 mx-auto mt-2 mb-5 mt-md-2 mb-md-5  text-left">
-          <p><a href="https://www.linkedin.com/in/vitorgo/"> <i class="fab fa-linkedin"></i> Linked In</a></p>
+          <p><a href="https://www.linkedin.com/in/vitorgo/"> <i class="fab fa-linkedin"></i> LinkedIn</a></p>
           <p><a href="mailto:geral@umvitor.pt"><i class="fa fa-envelope"></i> geral@umvitor.pt</a></p>
         </div>
       </div>  
@@ -415,14 +305,23 @@
   </div>
 
 
-  <a href="res/vg-cv-en-2020.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-corner-hover" download>
-      <span> Download PDF </span>
+  <!-- DOWNLOAD PDF-->
+    <backdrop style="display: none;"></backdrop>
+    <span class="btn btn-primary btn-corner-hover encolhido">
+      <a href="res/vg-cv-en-2020.pdf" target="_blank" rel="noopener noreferrer" download style="display: none;">
+        Download PDF
+      </a>
       <i class="fas fa-download"></i>
-  </a>
+    </span>
 
-    <footer class="bg-dark p-3 p-lg-5">
-      <p>updated Jan 18, 2020</p>
-    </footer>
+  <footer class="bg-dark p-3 p-lg-5">
+    <p>updated Jan 24, 2020<br>
+    • improved usability of floating button on mobile devices
+    • separated portefolio into new page but lacks content
+  </p>
+
+
+  </footer>
 
   <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -434,9 +333,10 @@
     <script type="text/javascript" src="res/visible/jquery.visible.js"></script>
   <!-- Moment -->
     <script type="text/javascript" src="res/js/moment.js"></script>
+  <!-- POWER ACTION BUTTON -->
+    <script type="text/javascript" src="res/js/power_action_button.js"></script>
 
 
-  <!-- Scroll? -->
   <script>
 
     $('body').scrollspy({ target: '#my-navbar' });
@@ -450,19 +350,10 @@
        });
    });
 
-    $(window).scroll(function() {
-        if ($('#dl-btn-banner').visible()) {
-            /*$('.btn-corner-hover').hide();*/
-            $(".btn-corner-hover").css({ opacity: 0 });
-        }else{
-            /*$('.btn-corner-hover').show();*/
-            $(".btn-corner-hover").css({ opacity: 1 });
-        }
-    });
-    $(document).ready(function(){
-      var lm = moment(new Date(document.lastModified));
-      $('.last-modified').text(lm.fromNow(false, 'm'));
-    });
+   
+
+
   </script>
+
 </body>
 </html>

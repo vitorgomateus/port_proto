@@ -1,4 +1,5 @@
-exp.html
+exp/
+simple-router.js
 
 # Windows image file caches
 Thumbs.db
