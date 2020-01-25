@@ -47,8 +47,10 @@
     <script src="https://kit.fontawesome.com/cd4ab06dd7.js" crossorigin="anonymous"></script>
 
     <link href="index.css" rel="stylesheet">
+    <!-- experiment with material
+      <link href="res/css/material.css" rel="stylesheet">-->
 
-  <!-- Custom styles for this template 
+   <!-- Custom styles for this template 
     <link href="cover.css" rel="stylesheet">-->
   </head>
 
@@ -74,13 +76,17 @@
   </nav>
 
 
-  <div class="cover position-relative overflow-hidden text-center bg-dark">
+  <div class="cover position-relative overflow-hidden bg-dark">
     <div class="col-md-5 p-lg-5 mx-auto my-5">
       <h1 class="cover-heading">Hello fellow human.</h1>
+      <p class="lead">
+        This is the Curriculum Vitae for Vitor Gonçalves, a UX Desinger from Portugal. Feel free to look around, get in touch, or download the PDF. <br>
+        Dropping the third-person now, I'm currently open to freelancing gigs of graphical design, or even UX. 
+      </p>
       <p class="lead">This is the online <i>Curriculum Vitae</i> for Vitor Gonçalves, a UX Designer from Portugal. He is nice. <br> This CV is undertaking some fine-tuning, but in the meantime feel free to download the PDF or get in touch.<br><br>
       Thank you for passing by.</p>
       <a href="mailto:geral@umvitor.pt" class="btn btn-default mx-1"> <i class="fas fa-envelope"></i> Get in Touch</a>
-      <a id="dl-btn-banner" href="res/vg-cv-en-2020.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary mx-1" download> <i class="fas fa-download"></i> Download PDF</a>
+      <a id="dl-btn-banner" href="res/vg-cv-en-2020.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary mx-1" download> <i class="fas fa-download"></i> Download CV PDF</a>
     </div>
     <div class="product-device shadow-sm d-none d-md-block"></div>
     <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
@@ -108,14 +114,14 @@
                 <td><i class="fas fa-birthday-cake mr-1"></i></td>
                 <td>March, 1991</td>
               </tr>
-              <tr>
+              <tr id="info-location" data-toggle="tooltip" data-placement="top" title="Available to move anywhere in Europe">
                 <td><i class="fas fa-map-marker-alt mr-1"></i></td>
                 <td>Aveiro, Portugal</td>
               </tr>
-              <tr>
+              <!--<tr>
                 <td><i class="fas fa-box-open mr-1"></i></td>
                 <td>Available to move anywhere in Europe</td>
-              </tr>
+              </tr>-->
               <tr>
                 <td><i class="fas fa-scroll mr-1"></i></td>
                 <td>Ms Multimedia Communication</td>
@@ -167,9 +173,9 @@
               <!-- <img src="..." class="card-img-top" alt="..."> -->
               <div class="card-header">
                 <h5 class="card-title">UX Designer</h5>
+                <a href="https://www.linkedin.com/company/watgrid/"><h6>@ Watgrid </h6></a>
               </div>
               <div class="card-body">
-                <a href="https://www.linkedin.com/company/watgrid/"><h6>@ Watgrid </h6></a>
                 <p class="card-text">
                   Very inovative and disruptive project in applying digital technologies to wine monitoring. My work wost mostly focused on UX Design and Development but also helped with digital communication. Was an amazing opportunity to develop teamwork skills and to work on a large scale project improving on adaptability as well as on technical skills.
                 </p>
@@ -179,6 +185,8 @@
                 <span class="badge badge-pill badge-dark">user research</span> 
                 <span class="badge badge-pill badge-dark">usability testing</span>
                 <span class="badge badge-pill badge-dark">google analytics</span>
+              </div>
+              <div class="card-footer">
                 <p class="card-text"><small class="text-muted">(1y 7mo) Jun 18 - Dec 19</small></p>
               </div>
             </div>
@@ -188,13 +196,15 @@
             <div class="card">
               <div class="card-header">
                 <h5 class="card-title">Digital Communication</h5>
+                <a href="https://myfriendsinportugal.com/"><h6>@ My Friends In </h6></a>
               </div>
               <div class="card-body">
-                <a href="https://myfriendsinportugal.com/"><h6>@ My Friends In </h6></a>
                 <p class="card-text">Amazing experience as part of a small team in a young start-up. The team was friendly and we all pitched in for the challenges that are always part of a start-up. My work was focused on frontend by working with Wordpress, and finetuning in the PHP code. also contributed to video and graphical in digital communication.</p>
                 <span class="badge badge-pill badge-dark">vector design</span> 
                 <span class="badge badge-pill badge-dark">Wordpress</span> 
-                <span class="badge badge-pill badge-dark">branding</span> 
+                <span class="badge badge-pill badge-dark">branding</span>
+              </div>
+              <div class="card-footer"> 
                 <p class="card-text"><small class="text-muted">(11mo) Mar 17 - Jan 18</small></p>
               </div>
             </div>
@@ -204,9 +214,9 @@
             <div class="card">
               <div class="card-header">
                 <h5 class="card-title">Photographer</h5>
+                <a href="https://www.fotofelicidade.com/"><h6>@ Foto Felicidade </h6></a>
               </div>
               <div class="card-body">
-                <a href="https://www.fotofelicidade.com/"><h6>@ Foto Felicidade </h6></a>
                 <p class="card-text">
                   Job included:
                   <ul>
@@ -219,6 +229,8 @@
                 <span class="badge badge-pill badge-dark">photography capture and editing</span> 
                 <span class="badge badge-pill badge-dark">vector design</span> 
                 <span class="badge badge-pill badge-dark">digital composition</span> 
+              </div>
+              <div class="card-footer">
                 <p class="card-text"><small class="text-muted">(10y) 2007 - 2017</small></p>
               </div>
             </div>
@@ -239,9 +251,9 @@
               <!-- <img src="..." class="card-img-top" alt="..."> -->
               <div class="card-header">
                 <h5 class="card-title">Master's in Multimedia Communication</h5>
+                <h6>@ Universidade de Aveiro</h6>
               </div>
               <div class="card-body">
-                <h6>@ Universidade de Aveiro</h6>
                 <p class="card-text">
                   <span class="badge badge-pill badge-dark">UI design</span> 
                   <span class="badge badge-pill badge-dark">HTML/ CSS/ Javascript</span> 
@@ -254,6 +266,8 @@
                   <span class="badge badge-pill badge-dark">user research</span> 
                   <span class="badge badge-pill badge-dark">usability testing</span>
                 </p>
+              </div>
+              <div class="card-footer">
                 <p class="card-text"><small class="text-muted">2019</small></p>
               </div>
             </div>
@@ -263,9 +277,9 @@
             <div class="card">
               <div class="card-header">
                 <h5 class="card-title">Bachelor's in New Technologies of Communication</h5>
+                <h6>@ Universidade de Aveiro</h6>
               </div>
               <div class="card-body">
-                <h6>@ Universidade de Aveiro</h6>
                 <p class="card-text">
                   <span class="badge badge-pill badge-dark">photography capture and editing</span> 
                   <span class="badge badge-pill badge-dark">3D modeling and animation</span> 
@@ -278,6 +292,8 @@
                   <span class="badge badge-pill badge-dark">HTML/ CSS/ Javascript</span> 
                   <span class="badge badge-pill badge-dark">Cordoba</span>
                 </p>
+              </div>
+              <div class="card-footer">
                 <p class="card-text"><small class="text-muted">2014</small></p>
               </div>
             </div>
@@ -350,7 +366,9 @@
    });
 
    
-
+$(function () {
+  $('#info-location').tooltip({offset:-50})
+})
 
   </script>
 

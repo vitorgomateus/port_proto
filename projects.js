@@ -64,11 +64,7 @@ var projects_array = [
   ],
   thumbnail_src: "res/img/default.jpg",
   thumbnail_alt: "placeholder image",
-  images:[
-  {
-    src: "res/img/default.jpg",
-    alt: "placeholder image"
-  }]
+  images:[]
 },
 {
   code: "tiltgame",
@@ -84,11 +80,7 @@ var projects_array = [
   ],
   thumbnail_src: "res/img/default.jpg",
   thumbnail_alt: "placeholder image",
-  images:[
-  {
-    src: "res/img/default.jpg",
-    alt: "placeholder image"
-  }]
+  images:[]
 },
 {
   code: "geofreita",
@@ -106,11 +98,7 @@ var projects_array = [
   ],
   thumbnail_src: "res/img/default.jpg",
   thumbnail_alt: "placeholder image",
-  images:[
-  {
-    src: "res/img/default.jpg",
-    alt: "placeholder image"
-  }]
+  images:[]
 },
 {
   code: "880",
@@ -160,7 +148,7 @@ $.each(projects_array, function(i,proj){
   appendable += "<div class='col-12 col-sm-6 coluna-esq'>";
   appendable += "<div class='row'>"+ 
   "<div class='col-9 col-md-12'>"+
-  "<h5>"+proj.sub_title+"</h5>"+
+  "<h6>"+proj.sub_title+"</h6>"+
   "</div>"+
   "<div class='col-3 d-md-none'>"+
   "<span class='float-right mb-2 text-muted'>"+proj.time_text+"</span>"+

@@ -93,9 +93,6 @@ section{
   /*min-width: 200px;*/
 }
 
-.projects-wrapper .card{
-	border:none;
-}
 .sticky-header-wrapper{
 	position: sticky;
     top: 65px;
@@ -202,37 +199,10 @@ h2{
     column-count: 1;
 }
 
-
-/* #faf5ff Experiment */
-body{background-color: #eeebff;}
-
-.sticky-header-wrapper>div{
-	background: #eeebff;
-}
-.white-fade {
-    display: block;
-    height: 12px;
-    background: linear-gradient(0deg, transparent, #eeebff);
-}
-.card{
-	/*box-shadow: 2px 4px 8px #ccc;*/
-	/*box-shadow: 4px 8px 8px -8px #aaa, -4px -8px 8px -8px white;    */
-	/*box-shadow: 4px 4px 8px -4px #aaa, -2px -2px 8px #fdfcff;*/
-	/*box-shadow: 2px 2px 4px #aaa, -4px -4px 4px #fdfcff;*/
+.card-header, .card-footer{
+	background-color: transparent;
 	border: none;
-	box-shadow: 2px 2px 4px #d1d1d1, -4px -4px 4px #f8f5ff;
-    background: #eeebff;
-    margin-top: 0.5rem;
 }
-.name-v, .name-g{
-	text-shadow: 1px 2px #fff;
-}
-.container-about {
-    background: linear-gradient(0deg, #eeebff, white 45%);
-}
-
-/* #faf5ff Experiment */
-
 
 
 @media (min-width: 576px){
