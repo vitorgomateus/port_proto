@@ -9,9 +9,20 @@ on desktop:
   expands and contracts on hover
   downloads on click
  */
+
+
+$('body').append("<!-- DOWNLOAD PDF-->"+
+	"<pa-backdrop style='display: none;'></pa-backdrop>"+
+	"<span class='btn btn-primary btn-corner-hover encolhido'>"+
+	"<a href='res/vg-cv-en-2020.pdf' target='_blank' rel='noopener noreferrer' download style='display: none;'>"+
+	"Download CV PDF"+
+	"</a>"+
+	"<i class='fas fa-download'></i>"+
+	"</span>");
+
     var btnHover = $('.btn-corner-hover');
     var pa_link = $('.btn-corner-hover a');
-    var pa_backdrop = $('backdrop');
+    var pa_backdrop = $('pa-backdrop');
     var w = $(window).width();
 
     btnHover.hover(function(){

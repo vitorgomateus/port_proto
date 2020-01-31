@@ -116,6 +116,11 @@ var projects_array = [
   {
     src: "res/img/8 80 thumbnail x720.png",
     alt: "thumbnail image of the title screen"
+  },
+  {
+    src: "res/img/8 80 thumbnail x720.png",
+    alt: "thumbnail image of the title screen",
+    no_lightbox: true
   }]
 }];
 
@@ -124,19 +129,25 @@ var projects_array = [
 var appendable = "";
 
 $.each(projects_array, function(i,proj){
-  appendable += "<section id='proj-"+proj.code+"'>";
+  appendable += "<section id='proj-"+proj.code+"' data-depth='0.4'>";
   /* vv STICKY HEADER vv */
   appendable += "<div class='row sticky-header-wrapper'>";
 
   appendable += 
   "<div class='col-12 col-md-10 pt-2'>"+
   "<h3># "+proj.title+"</h3>"+
-  "</div>"+
-  "<div class='d-none d-md-block col-md-2 pt-3'>"+
-  "<span class='float-right mb-2 text-muted'>"+proj.time_text+"</span>"+
-  "</div>"+
-  "<span class='col-12 white-fade'>"+
-  "</span>";
+  "</div>";
+
+  appendable += (i+1 === projects_array.length) ?
+  "<div class='d-none d-md-block col-md-2 pt-3 text-right'>"+
+  "<a class='btn btn-sm btn-default'href='#top'>top ↑</a>"+
+  "</div>" : 
+  "<div class='d-none d-md-block col-md-2 pt-3 text-right'>"+
+  "<a class='btn btn-sm btn-default'href='#proj-"+projects_array[i+1].code+"'>next ↓</a>"+
+  "</div>";
+  //"<span class='float-right mb-2 text-muted'>"+proj.time_text+"</span>"+
+  //"<span class='col-12 white-fade'>"+
+  //"</span>"+
 
   appendable += "</div>";
 
@@ -155,7 +166,7 @@ $.each(projects_array, function(i,proj){
   "</div>"+
   "</div>";
 
-  appendable+="<p>";
+  appendable+="<p class='badge-list'>";
   $.each(proj.badges, function(i, b){
     appendable+="<span class='badge badge-pill badge-dark'>"+b+"</span>";
   });
@@ -173,12 +184,19 @@ $.each(projects_array, function(i,proj){
   "<div class='card-columns card-group-xs-1-lg-2'>";
 
   $.each(proj.images, function(i, img){
-  appendable+="<div class='card'>";
-    appendable+=
-    "<div class=\"card-img faux-img-cards\" style=\"background-image: url('"+img.src+"')\">"+
-    "<img src='"+img.src+"' class='card-img-top' alt='"+img.alt+"'>"+
-    "</div>";
-    appendable+="</div>";
+      appendable+="<div class='card'>";
+    if(img.no_lightbox){
+      appendable+=
+      "<div class=\"card-img no-lb faux-img-cards\" style=\"background-image: url('"+img.src+"')\">"+
+      "<img src='"+img.src+"' class='card-img-top' alt='"+img.alt+"'>"+
+      "</div>";
+    }else{
+      appendable+=
+      "<a href='"+img.src+"' class='swipebox card-img no-lb faux-img-cards' style=\"background-image: url('"+img.src+"')\" title='"+img.alt+"'>"+
+      "<img src='"+img.src+"' alt='"+img.alt+"'>"+
+      "</a>"; 
+    }
+      appendable+="</div>";
   });
 
   appendable+="</div>"+
@@ -190,3 +208,8 @@ $.each(projects_array, function(i,proj){
 });
 
 projects_view.append(appendable);
+;( function( $ ) {
+
+  //$( '.swipebox' ).swipebox();
+
+} )( jQuery );

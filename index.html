@@ -18,8 +18,9 @@
   <title>Vitor Gonçalves CV</title>
   <!-- <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/cover/"> -->
 
-  <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Bootstrap core CSS
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="res/bootstrap/css/bootstrap.min.css">
 
   <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="res/ico/apple-icon-57x57.png">
@@ -54,7 +55,7 @@
     <link href="cover.css" rel="stylesheet">-->
   </head>
 
-<body class="text-center" data-spy="scroll" data-target="#my-navbar">
+<body data-spy="scroll" data-target="#my-navbar">
   <nav id="my-navbar" class="navbar navbar-expand-md navbar-dark sticky-top bg-dark">
     <a class="py-2 mr-5 b-0" href="#" aria-label="top">
       <h3 class="p-0 m-0">
@@ -67,7 +68,7 @@
 
     <div class="collapse navbar-collapse text-right" id="navbarItems">
         <a class="nav-link py-2 mx-2" href="#work">CV</a>
-        <a class="nav-link py-2 mx-2" href="projects.html">Projects</a>
+        <a class="nav-link py-2 mx-2" href="projects.html">Portfolio</a>
         <a class="nav-link py-2 mx-2" href="#contacts">Contacts</a>
       <!--<div class="container">justify-content-between
         data-toggle="collapse" data-target="#navbarItems" 
@@ -81,9 +82,9 @@
       <h1 class="cover-heading">Hello fellow human.</h1>
       <p class="lead">
         This is the Curriculum Vitae for Vitor Gonçalves, a UX Desinger from Portugal. Feel free to look around, get in touch, or download the PDF. <br>
-        Dropping the third-person now, I'm currently open to freelancing gigs of graphical design, or even UX. 
+        Dropping the third-person now, I'm currently open to freelancing gigs of graphical design, or even UX. Plese, feel free to download the PDF or get in touch.
       </p>
-      <p class="lead">This is the online <i>Curriculum Vitae</i> for Vitor Gonçalves, a UX Designer from Portugal. He is nice. <br> This CV is undertaking some fine-tuning, but in the meantime feel free to download the PDF or get in touch.<br><br>
+      <p class="lead"><!--This is the online <i>Curriculum Vitae</i> for Vitor Gonçalves, a UX Designer from Portugal. He is nice. <br> This CV is undertaking some fine-tuning, but in the meantime feel free to download the PDF or get in touch.<br><br>-->
       Thank you for passing by.</p>
       <a href="mailto:geral@umvitor.pt" class="btn btn-default mx-1"> <i class="fas fa-envelope"></i> Get in Touch</a>
       <a id="dl-btn-banner" href="res/vg-cv-en-2020.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary mx-1" download> <i class="fas fa-download"></i> Download CV PDF</a>
@@ -164,8 +165,8 @@
     <!-- WORK & EDUCATION -->
   <div class="container" id="vitor-cv">
     <section id="work">
-      <h2>Work</h2>
       <div class="px-lg-5 mx-auto my-5 mt-md-2 mb-md-5 pb-md-5 text-left">
+      <h2>Work</h2>
         <!-- card-group-xs-2-md-3 -->
         <div class="row">
           <div class="col-12 col-md-6 col-lg-4 pb-2">
@@ -242,8 +243,8 @@
     
     <!-- EDUCATION -->
     <section id="education">
-      <h2>Education</h2>
       <div class="px-lg-5 mx-auto my-5 mt-md-2 mb-md-5 pb-md-5 text-left">
+      <h2>Education</h2>
         <div class="row">
 
           <div class="col-12 col-md-6 col-lg-4 pb-2">
@@ -308,40 +309,25 @@
     <!-- CONTACTS -->
   <div class="container">
     <section id="contacts">
+      <div class="px-lg-5 mx-auto my-5 mt-md-2 mb-md-5 pb-md-5 text-left">
       <h2>Contacts</h2>
-      <div class="row">
-        <div class="col-sm-4 pb-md-5 px-lg-5 mx-auto mt-2 mb-5 mt-md-2 mb-md-5  text-left">
           <p><a href="https://www.linkedin.com/in/vitorgo/"> <i class="fab fa-linkedin"></i> LinkedIn</a></p>
           <p><a href="mailto:geral@umvitor.pt"><i class="fa fa-envelope"></i> geral@umvitor.pt</a></p>
-        </div>
       </div>  
     </section>
 
   </div>
 
 
-  <!-- DOWNLOAD PDF-->
-    <backdrop style="display: none;"></backdrop>
-    <span class="btn btn-primary btn-corner-hover encolhido">
-      <a href="res/vg-cv-en-2020.pdf" target="_blank" rel="noopener noreferrer" download style="display: none;">
-        Download PDF
-      </a>
-      <i class="fas fa-download"></i>
-    </span>
 
-  <footer class="bg-dark p-3 p-lg-5">
-    <p>updated Jan 24, 2020<br>
-    • improved usability of floating button on mobile devices
-    • separated portefolio into new page but lacks content
-  </p>
-
-
-  </footer>
-
-  <!-- Bootstrap -->
+  <!-- Bootstrap
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>-->
+    <script src="res/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="res/js/popper.min.js"></script>
+    <script src="res/bootstrap/js/bootstrap.min.js"></script>
+
 
 
   <!-- Visible -->
@@ -350,6 +336,8 @@
     <script type="text/javascript" src="res/js/moment.js"></script>
   <!-- POWER ACTION BUTTON -->
     <script type="text/javascript" src="res/js/power_action_button.js"></script>
+  <!-- FOOTER -->
+    <script type="text/javascript" src="res/js/footer.js"></script>
 
 
   <script>
