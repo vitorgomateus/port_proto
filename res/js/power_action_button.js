@@ -26,6 +26,7 @@ $('body').append("<!-- DOWNLOAD PDF-->"+
     var w = $(window).width();
 
     btnHover.hover(function(){
+    w = $(window).width();
       if(w>576) {
         if(btnHover.hasClass("expandido")){
           //console.log('hover close');
@@ -38,6 +39,7 @@ $('body').append("<!-- DOWNLOAD PDF-->"+
     });
 
     btnHover.click(function(e){
+    w = $(window).width();
       //console.log("type",e.type,"target", e.target);
       if(w>576) {
         //console.log('desktop');
@@ -83,6 +85,7 @@ $('body').append("<!-- DOWNLOAD PDF-->"+
     });
     $(window).scroll(function() {
       checkPowerActionBtn();
+        w = $(window).width();
         if(w<576 && btnHover.hasClass("expandido")){
           //console.log('hover close');
           closePowerActionBtn();
