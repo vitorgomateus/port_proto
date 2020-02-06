@@ -25,6 +25,7 @@ var projects_array = [
     alt: "Image of Banco de Tempo de Feira"
   }]
 },
+//  Notify Me BetTV_aposta_x300
 {
   code: "notifyme",
   title: "Notify Me",
@@ -44,13 +45,27 @@ var projects_array = [
   thumbnail_alt: "Notify Me project logo",
   images:[
   {
-    src: "res/img/web_hi_res_512.png",
-    alt: "Notify Me project logo"
+    src: "res/img/logo_notifyme_x300.png",
+    big_src: "res/img/big/logo_notifyme_x512.png",
+    alt: "Notify Me project logo",
+    text: "Notify Me project logo"
   },{
-    src: "res/img/notifier_3d_screenshot.JPG",
-    alt: "image of the 3D object for the bluetooth beacon"
-  }]
+    src: "res/img/notifier_3d_screenshot_x300.JPG",
+    big_src: "res/img/big/notifier_3d_screenshot_x554.JPG",
+    alt: "image of the 3D object for the bluetooth beacon",
+    text: "3D object for the bluetooth beacon"
+  },{
+    src: "res/img/BetTV_aposta_x300.jpg",
+    big_src: "res/img/big/BetTV_aposta_x720.jpg",
+    alt: "screenshot of a screen from BetTV concept",
+    text: "BetTV bet screen"
+  },{
+    src: "res/img/easyTv_watching.jpg",
+    alt: "screenshot of a screen from concept EasyTV app",
+    text: "EasyTV watching screen"
+   }]
 },
+//  Babel Rock
 {
   code: "babelrock",
   title: "Babel Rock",
@@ -66,6 +81,7 @@ var projects_array = [
   thumbnail_alt: "placeholder image",
   images:[]
 },
+//  Tilt Game
 {
   code: "tiltgame",
   title: "Tilt Game - Feira de Março",
@@ -78,10 +94,15 @@ var projects_array = [
     "video-game design",
     "UI design"
   ],
-  thumbnail_src: "res/img/default.jpg",
-  thumbnail_alt: "placeholder image",
-  images:[]
+  images:[
+  {
+    src: "res/img/tilt_game_x300.jpg",
+    big_src: "res/img/big/tilt_game_x543.jpg",
+    alt: "screenshot of the gameplay",
+    text: "screenshot of the gameplay"
+  }]
 },
+// Geo Freita
 {
   code: "geofreita",
   title: "Geo Freita",
@@ -96,10 +117,14 @@ var projects_array = [
     "PhoneGap",
     "Geolocation"
   ],
-  thumbnail_src: "res/img/default.jpg",
-  thumbnail_alt: "placeholder image",
-  images:[]
+  images:[
+  {
+    src: "res/img/geofreita_x300.jpg",
+    big_src: "res/img/big/geofreita_x1024.jpg",
+    alt: "preview image for 'Gea Freita' project"
+  }] 
 },
+//  8 80
 {
   code: "880",
   title: "8/80",
@@ -114,17 +139,66 @@ var projects_array = [
   thumbnail_alt: "thumbnail image of the title screen",
   images:[
   {
-    src: "res/img/8 80 thumbnail x720.png",
-    alt: "thumbnail image of the title screen"
+    src: "res/img/8_80_thumbnail_x300.png",
+    big_src: "res/img/big/8_80_thumbnail_x720.png",
+    alt: "thumbnail image of the title screen",
+    text: "Title Screen"
   },
   {
-    src: "res/img/8 80 thumbnail x720.png",
+    src: "res/img/8_80_thumbnail_2_x300.png",
+    big_src: "res/img/big/8_80_thumbnail_2_x720.png",
+    alt: "thumbnail image of a character lighting a cigar",
+    text: "badass #1"
+  },
+  {
+    src: "res/img/8_80_thumbnail_3_x300.png",
+    big_src: "res/img/big/8_80_thumbnail_3_x720.png",
+    alt: "thumbnail image of a man looking surprised at a script",
+    text: "badass #3"
+  },
+  {
+    src: "res/img/8_80_thumbnail_x300.png",
     alt: "thumbnail image of the title screen",
-    no_lightbox: true
+    text: "Youtube",
+    link: {
+      type:"yt",
+      href: "https://youtu.be/JrcJihn8ID8",
+      icon:"fa fa-play-circle"
+    }
   }]
 }];
 
+//external-link-square-alt
+//external-link-alt
+//youtube
+//adobe
+/*
+ * picture
+ * external link
+ * * youtube  -yt
+ * * Adobe XD -axd
+ * * website  -web
+ * 
+*/
 
+/*
+  {
+    src: "res/img/8_80_thumbnail_3_x300.png",
+    big_src: "res/img/big/8_80_thumbnail_3_x720.png",
+    alt: "thumbnail image of a man looking surprised at a script",
+    text: "badass #3"
+  },
+  {
+    src: "res/img/8_80_thumbnail_x300.png",
+    alt: "thumbnail image of the title screen",
+    text: "Youtube",
+    link: {
+      type:"yt",
+      href: "https://youtu.be/JrcJihn8ID8",
+      icon:"fa fa-play-circle"
+    }
+
+*/
 
 var appendable = "";
 
@@ -138,14 +212,15 @@ $.each(projects_array, function(i,proj){
   "<h3># "+proj.title+"</h3>"+
   "</div>";
 
-  appendable += (i+1 === projects_array.length) ?
+  /*appendable += (i+1 === projects_array.length) ?
   "<div class='d-none d-md-block col-md-2 pt-3 text-right'>"+
   "<a class='btn btn-sm btn-default'href='#top'>top ↑</a>"+
-  "</div>" : 
+  "</div>" :*/
+  appendable += 
   "<div class='d-none d-md-block col-md-2 pt-3 text-right'>"+
-  "<a class='btn btn-sm btn-default'href='#proj-"+projects_array[i+1].code+"'>next ↓</a>"+
+  "<span class='float-right mb-2 text-muted'>"+proj.time_text+"</span>"+
   "</div>";
-  //"<span class='float-right mb-2 text-muted'>"+proj.time_text+"</span>"+
+  //"<a class='btn btn-sm btn-default'href='#proj-"+projects_array[i+1].code+"'>next ↓</a>"+
   //"<span class='col-12 white-fade'>"+
   //"</span>"+
 
@@ -181,7 +256,7 @@ $.each(projects_array, function(i,proj){
 
   /* vv RIGHT COLUMN vv */
   appendable+="<div class='col-12 col-sm-6 coluna-dir'>"+
-  "<div class='card-columns card-group-xs-1-lg-2'>";
+  "<div class='card-columns text-right card-group-xs-1-lg-2'>";
 
   $.each(proj.images, function(i, img){
       appendable+="<div class='card'>";
@@ -191,11 +266,25 @@ $.each(projects_array, function(i,proj){
       "<img src='"+img.src+"' class='card-img-top' alt='"+img.alt+"'>"+
       "</div>";
     }else{
+      //class='swipebox
+
+      var href = "href='" + (img.link ? img.link.href : (img.big_src || img.src))+"'"+(img.link?" target='_blank' rel='noopener noreferrer'":"");
       appendable+=
-      "<a href='"+img.src+"' class='swipebox card-img no-lb faux-img-cards' style=\"background-image: url('"+img.src+"')\" title='"+img.alt+"'>"+
-      "<img src='"+img.src+"' alt='"+img.alt+"'>"+
-      "</a>"; 
+      "<a "+href+" class='card-img no-lb faux-img-cards' style=\"background-image: url('"+img.src+"')\" title='"+img.alt+"'>"+
+      "<img src='"+img.src+"' alt='"+img.alt+"'>";
+      if(img.link){
+        appendable+=
+        "<span class='card-img-link-icon d-flex justify-content-center align-items-center lk-"+img.link.type+"'>"+
+        "<i class='"+img.link.icon+"'></i>"+
+        "</span>";
+      }
+      
+      appendable+="</a>"; 
     }
+      if(img.text){
+        appendable+=
+        "<p>"+img.text+" "+ (img.link ? "<i class='fa fa-link'></i>" : "") + "</p>";
+      }
       appendable+="</div>";
   });
 

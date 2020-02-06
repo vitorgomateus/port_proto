@@ -45,10 +45,6 @@
 	background-repeat: no-repeat;
 	background-size: contain;
 
-    border: 5px solid #444;
-    border-radius: 10px;
-    background-color: #444;
-    box-shadow: 6px 4px 12px -8px #444;
     /* border: 1px solid #ccc; */
     /* box-shadow: inset 2px 2px 8px 4px #eee;*/
 }
@@ -125,8 +121,46 @@ section{
 
 /* PROJECTS */
 .container-projects .card{
-	border: none;
-	background-color: transparent;
+  border: none;
+  background-color: transparent;
+  /* border: 5px solid #444; */
+  /* padding: 5px; */
+  /* border-radius: 10px; */
+  /* background-color: #1a1a1a; */
+  /* box-shadow: 6px 4px 12px -8px #1a1a1a; */
+  /* color: white;*/
+}
+.container-projects .faux-img-cards {
+    /*background-position: center;*/
+    border-radius: 8px;
+    background-color: #1a1a1a;
+    box-shadow: 6px 4px 12px -8px #1a1a1a;
+    color: white;
+    border: 5px solid #1a1a1a;
+}
+/*.container-projects .faux-img-cards{
+  background-position: top;
+}*/
+.container-projects .card p{
+  color: white;
+  margin: 0;
+  padding: 2px 5px;
+  background: #1a1a1a;
+  background: #1a1a1a70;
+  text-shadow: 1px 1px 1px #1a1a1a;
+  margin-top: -28px;
+  border-radius: 0 0 5px 5px;
+}
+
+.card-img-link-icon {
+  width: 100%;
+  height: 100%;
+  background: #33333360;
+}
+.card-img-link-icon i {
+    font-size: 56px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
 }
 
 
