@@ -79,7 +79,10 @@ var projects_array = [
   ],
   thumbnail_src: "res/img/default.jpg",
   thumbnail_alt: "placeholder image",
-  images:[]
+  images:[{
+    src: "res/img/default.jpg",
+    alt: "placeholder image"
+   }]
 },
 //  Tilt Game
 {
