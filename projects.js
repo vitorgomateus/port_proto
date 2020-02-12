@@ -1,19 +1,22 @@
 var projects_view = $('.projects-wrapper');
 
 var projects_array = [
+// BDT Feira
 {
   code: "bdtfeira",
   title: "Banco de Tempo de Santa Maria da Feira",
   sub_title: "Project for Master's dissertation",
   time_text: "2019",
-  description: "",
+  description: 
+  "This project studied the potential contribution of multimedia technology"+
+  "for a timebanking community in Santa Maria da Feira, Portugal. "+
+  "As a proof of concept, two prototypes were developed for a majorly senior community.",
   badges: 
   [
     "UI design", 
-    "HTML/ CSS/ Javascript", 
-    "React+Redux",
-    "Arduino",
-    "Bluetooth",
+    "Wordpress",
+    "Adobe XD",
+    "User Research",
     "fast prototyping",
     "usability testing"
   ],
@@ -25,12 +28,17 @@ var projects_array = [
     alt: "Image of Banco de Tempo de Feira"
   }]
 },
-//  Notify Me BetTV_aposta_x300
+//  Notify Me 
 {
   code: "notifyme",
   title: "Notify Me",
   sub_title: "Application for Master's",
   time_text: "2017",
+  description: "The final year of the master's implemented a method in which different classes/disciplines colaborated in a single project. "+
+  "Notify Me was a project that experimented with detecting user's TV usage. This was exploited using a Bluetooth Beacon to detect proximity using an App. "+
+  "This App promised better TV suggestions made by algorythms and the user's history. "+
+  "An additional gamification concept was developed where users could bet on some TV show's content against each other, "+
+  "using custom currency and applying for monthly prizes.",
   badges: 
   [
     "UI design", 
@@ -71,7 +79,10 @@ var projects_array = [
   title: "Babel Rock",
   sub_title: "Interactive Music-Playing Physical-Globe",
   time_text: "2017",
-  description: "",
+  description: "Project for a master's class, with the purpose of exploiting physical objects for digital interactions. "+
+  "Here the sphere was studied to be used as an interface."+
+  "A prototype was developed using two potentiometers, with which users can select a country "+
+  "and listen to it's music.",
   badges: 
   [
     "Arduino",
@@ -90,7 +101,7 @@ var projects_array = [
   title: "Tilt Game - Feira de Março",
   sub_title: "Video Game with Lampwave Studio",
   time_text: "2015",
-  description: "",
+  description: "A colaboration with Lampwave Studio to develop a video-game for a special event. It used the gyroscope to generate a ball-in-a-maze game.",
   badges: 
   [
     "vector design",
