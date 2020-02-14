@@ -355,9 +355,57 @@
    });
 
    
-$(function () {
-  $('#info-location').tooltip({offset:-50})
-})
+  $(function () {
+    $('#info-location').tooltip({offset:-50})
+  })
+
+  $(document).ready(function () {
+    // ** Get visitor origin ** 
+    var params = searchToObject();
+    var value = 'unknown';
+    //if(params.length>1)
+    //  return;
+    var valuesIdx = {
+      '0':'global',
+      '1':'friends',
+      '2':'job'
+    }
+    var values = {
+      '00':'GL',
+      '01':'UX',
+      '02':'GD',
+      '03':'LI',
+      '10':'Tanya',
+      '11':'Tomás',
+      '12':'André',
+      '98':'TEST'
+    };
+    if(params.hasOwnProperty('a'))
+      if(values.hasOwnProperty(params.a))
+        value = values[params.a];
+      else if(valuesIdx.hasOwnProperty(params.a.charAt(0)))
+        value = values[params.a];
+      else
+        value = params.a;
+    //console.log("a="+value);
+    ga('set', 'dimension1', value);
+  });
+
+  function searchToObject() {
+    var pairs = window.location.search.substring(1).split("&"),
+      obj = {},
+      pair,
+      i;
+
+    for ( i in pairs ) {
+      if ( pairs[i] === "" ) continue;
+
+      pair = pairs[i].split("=");
+      obj[ decodeURIComponent( pair[0] ) ] = decodeURIComponent( pair[1] );
+    }
+
+    return obj;
+  }
 
   </script>
 
