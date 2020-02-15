@@ -1,6 +1,41 @@
 var projects_view = $('.projects-wrapper');
 
 var projects_array = [
+// Watgrid
+{
+  code: "winegrid",
+  title: "Winegrid",
+  sub_title: "The Winegrid platform for the company Watgrid",
+  time_text: "2019",
+  description: 
+  "The platform to be developed for Winegrid was quite challenging as it encompassed a complex information architecture "+
+  "which generated a gap with the user's mental model. In order to test and allow common ground of understanding between the team members "+
+  "a hi-fi prototype was made in Adobe XD. This made it easier to guess implementation efforts and the validity of some of the functionalities.",
+  badges: 
+  [
+    "UI design",
+    "Adobe XD",
+    "fast prototyping",
+    "usability testing"
+  ],
+  images:[
+  {
+    src: "res/img/loading-giffer.gif",
+    class: 'b-white'
+    //,
+    //alt: "Image of Banco de Tempo de Feira"
+  },
+  {
+    src: "res/img/8_80_thumbnail_x300.png",
+    alt: "thumbnail image of the title screen",
+    text: "Youtube",
+    link: {
+      type:"axd",
+      href: "https://xd.adobe.com/view/25bdfd92-4b17-4a25-71a9-c02c1daecb0c-538c/",
+      icon:"fa fa-external-link-alt"
+    }
+  }]
+},
 // BDT Feira
 {
   code: "bdtfeira",
@@ -273,7 +308,9 @@ $.each(projects_array, function(i,proj){
   "<div class='card-columns text-right card-group-xs-1-lg-2'>";
 
   $.each(proj.images, function(i, img){
-      appendable+="<div class='card'>";
+    var classer = img.hasOwnProperty('class') ? " "+img.class : '';
+    
+    appendable+="<div class='card'>";
     if(img.no_lightbox){
       appendable+=
       "<div class=\"card-img no-lb faux-img-cards\" style=\"background-image: url('"+img.src+"')\">"+
@@ -284,7 +321,7 @@ $.each(projects_array, function(i,proj){
 
       var href = "href='" + (img.link ? img.link.href : (img.big_src || img.src))+"'"+(img.link?" target='_blank' rel='noopener noreferrer'":"");
       appendable+=
-      "<a "+href+" class='card-img no-lb faux-img-cards' style=\"background-image: url('"+img.src+"')\" title='"+img.alt+"'>"+
+      "<a "+href+" class='card-img no-lb faux-img-cards"+classer+"' style=\"background-image: url('"+img.src+"')\" title='"+img.alt+"'>"+
       "<img src='"+img.src+"' alt='"+img.alt+"'>";
       if(img.link){
         appendable+=

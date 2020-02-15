@@ -361,6 +361,8 @@
 
   $(document).ready(function () {
     // ** Get visitor origin ** 
+    if(decodeURI(window.location).substring(0,4)==="file")
+      return;
     var params = searchToObject();
     var value = 'unknown';
     //if(params.length>1)

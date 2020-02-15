@@ -1,4 +1,7 @@
-
+/* UTILS */
+.b-white{
+  background-color: white !important;
+}
                     
 /* ABOUT*/
 
@@ -138,9 +141,9 @@ section{
     color: white;
     border: 5px solid #1a1a1a;
 }
-/*.container-projects .faux-img-cards{
+.container-projects .faux-img-cards{
   background-position: top;
-}*/
+}
 .container-projects .card p{
   color: white;
   margin: 0;
@@ -162,7 +165,14 @@ section{
     color: white;
     text-shadow: 1px 1px 2px black;
 }
-
+.card-img-link-icon i.fa.fa-external-link-alt{
+    font-size: 48px;
+}
+/*
+#proj-winegrid .card:first-child>a{
+  background-color: white;
+}
+*/
 
 /* CORNER HOVER BUTTON */
 pa-backdrop{
@@ -186,7 +196,8 @@ pa-backdrop{
   /*position: sticky;*/
   position: fixed;
   right: 24px !important;
-  bottom: 24px;
+  /*bottom: 24px;*/
+  top: 89px;
   overflow: hidden;
   z-index: 2;
   -webkit-transition: width .3s ease-in-out, border-radius .4s ease-in-out, opacity .4s ease-in-out;
@@ -297,10 +308,10 @@ h2{
     -moz-column-count: 3;
     column-count: 3;
   }
-  .btn-corner-hover{
+  /*.btn-corner-hover{
 	  bottom: unset;
 	  top: 89px;
-  }
+  }*/
 }
 @media (min-width: 992px){
   .card-group-xs-1-lg-2{
