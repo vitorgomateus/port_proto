@@ -26,9 +26,9 @@ var projects_array = [
     //alt: "Image of Banco de Tempo de Feira"
   },
   {
-    src: "res/img/8_80_thumbnail_x300.png",
-    alt: "thumbnail image of the title screen",
-    text: "Youtube",
+    src: "res/img/winegrid-adobe-logo.png",
+    alt: "Winegrid product logo",
+    text: "Adobe XD Link",
     link: {
       type:"axd",
       href: "https://xd.adobe.com/view/25bdfd92-4b17-4a25-71a9-c02c1daecb0c-538c/",
