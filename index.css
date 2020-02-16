@@ -2,6 +2,8 @@
 .b-white{
   background-color: white !important;
 }
+.b-center{ background-position: center !important }
+.b-size-75{ background-size: 75% !important; }
                     
 /* ABOUT*/
 

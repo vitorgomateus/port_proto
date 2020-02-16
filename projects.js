@@ -21,7 +21,8 @@ var projects_array = [
   images:[
   {
     src: "res/img/loading-giffer.gif",
-    class: 'b-white'
+    text: 'Animated loading logo',
+    class: 'b-white b-center b-size-75'
     //,
     //alt: "Image of Banco de Tempo de Feira"
   },
