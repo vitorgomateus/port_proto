@@ -13,6 +13,7 @@
 2. Menu *Give Feedback*
  */
  var feedback = {
+  initial_timer: 6000,
   containerParent : null,
   menuParent : null,
   menu_button : null,
@@ -20,7 +21,7 @@
   inquiry_toast : null,
   thank_toast: null,
   submit_response : function(response){
-    console.log("response submited: "+response);
+    //console.log("response submited: "+response);
 
     // some further response to what they say, but I am coming up with nothing
     var final_text ={
@@ -53,7 +54,7 @@
     this.thank_toast.toast('show');
   },
   open_inquiry : function(){
-    console.log("open_inquiry");
+    //console.log("open_inquiry");
     this.proposition_toast.toast('hide');
     if(!this.inquiry_toast){
       this.containerParent.append("<div class='toast feedback-toast give-feedback-toast' data-delay='60000' data-autohide='false' "+
@@ -83,6 +84,7 @@
     this.inquiry_toast.toast('show');
   },
   initialize : function(menu_element, container_element){
+    //console.log("initialize");
     /* MAKE MENU OPTION */
     this.menuParent = $(menu_element);
     this.menuParent.append("<a class='nav-link py-2 mx-2 give-feedback-click' onclick='return feedback.open_inquiry();' >Give Feedback</a>");
@@ -103,15 +105,14 @@
       "</div>");
       this.proposition_toast = $('.feedback-toast.propose-feedback-toast');
     }
-    /* TIME IT */
-    /* TIME IT */
-    /* TIME IT */
-    /* TIME IT */
-    /* TIME IT */
-    /* TIME IT */
-    /* TIME IT */
-    /* TIME IT */
-    /* TIME IT */
-    this.proposition_toast.toast('show');
+
+    //console.log("setting timeout",this.proposition_toast);
+    setTimeout(this.show_toast, this.initial_timer);
+  },
+  show_toast: function(){
+    //console.log("show_toast",feedback.proposition_toast);
+    var fo = feedback;
+    if(!fo.proposition_toast)return;
+    fo.proposition_toast.toast('show');
   }
- }
+ };
