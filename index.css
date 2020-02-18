@@ -4,7 +4,32 @@
 }
 .b-center{ background-position: center !important }
 .b-size-75{ background-size: 75% !important; }
-                    
+             
+
+.toast-wrapper{
+  position: absolute; 
+  top: 0; 
+  right: 0;
+  padding: 15px 10px;
+  z-index: 1030;
+}
+.feedback-toast .btn i {
+    font-size: 20px;
+}
+.feedback-toast .btn, .feedback-toast .btn:hover {
+  color: #fff;
+}
+/*.feedback-toast .btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+.feedback-toast .btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}*/
+
 /* ABOUT*/
 
       #about>div{
