@@ -38,7 +38,7 @@
     });
     this.inquiry_toast.toast('hide');
     if(!this.thank_toast){
-      this.containerParent.append("<div class='toast feedback-toast thank-feedback-toast' data-delay='3000' data-autohide='false' "+
+      this.containerParent.append("<div class='toast feedback-toast thank-feedback-toast' data-delay='3000' data-autohide='true' "+
         "role='alert' aria-live='assertive' aria-atomic='true'>"+
         "<div class='toast-header'>"+
           "<h6 class='my-2'>"+
@@ -57,7 +57,7 @@
     //console.log("open_inquiry");
     this.proposition_toast.toast('hide');
     if(!this.inquiry_toast){
-      this.containerParent.append("<div class='toast feedback-toast give-feedback-toast' data-delay='60000' data-autohide='false' "+
+      this.containerParent.append("<div class='toast feedback-toast give-feedback-toast' data-delay='60000' data-autohide='true' "+
         "role='alert' aria-live='assertive' aria-atomic='true'>"+
         "<div class='toast-header'>"+
           "What do you think of my portfolio?"+
@@ -92,7 +92,7 @@
     /* MAKE PROPOSITION TOAST and time it */
     this.containerParent = $(container_element);
     if(!this.proposition_toast){
-      this.containerParent.append("<div class='toast feedback-toast propose-feedback-toast' data-delay='30000' data-autohide='false' "+
+      this.containerParent.append("<div class='toast feedback-toast propose-feedback-toast' data-delay='30000' data-autohide='true' "+
         "role='alert' aria-live='assertive' aria-atomic='true'>"+
         "<div class='toast-header'>"+
           "It would mean a lot to me if you could give me some feedback"+
