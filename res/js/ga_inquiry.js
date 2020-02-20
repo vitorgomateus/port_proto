@@ -12,7 +12,14 @@
 1. Toast ~~*It would mean a lot to me if you could give me some feedback*~~
 2. Menu *Give Feedback*
  */
+ var tracker = null;
+if ("ga" in window) {
+    tracker = ga.getAll()[0];
+}else{
+  console.log("ga error");
+}
  var feedback = {
+  result: null,
   initial_timer: 6000,
   containerParent : null,
   menuParent : null,
@@ -29,13 +36,19 @@
     'want to see more': 'I actually might have some more things to show. Get in touch with me.',
     'only curious': 'Feel free to give me your opinion.'
     };
-    ga('send', {
+    //https://stackoverflow.com/questions/15744042/events-not-being-tracked-in-new-google-analytics-analytics-js-setup
+    if (tracker)
+        tracker.send('event', 'Feedback', response, 'Feb 2020');
+    //ga('send', 'event', 'Feedback', response, 'Feb 2020');
+    /*
+    this.result = ga('send', {
       hitType: 'event',
       eventCategory: 'Feedback',
       eventAction: response,
       eventLabel: 'Feb 2020'
       //eventValue: reponses[response]
     });
+    */
     this.inquiry_toast.toast('hide');
     if(!this.thank_toast){
       this.containerParent.append("<div class='toast feedback-toast thank-feedback-toast' data-delay='3000' data-autohide='true' "+
