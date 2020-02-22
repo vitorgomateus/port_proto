@@ -403,7 +403,15 @@
       else
         value = params.a;
     //console.log("a="+value);
-    ga('set', 'dimension1', value);
+    //ga('set', 'dimension1', value);
+
+    var tracker = null;
+    if ("ga" in window) {
+        tracker = ga.getAll()[0];
+    }else{
+      console.log("ga error");
+    }
+    tracker.set('dimension1', value);
   });
 
   function searchToObject() {
