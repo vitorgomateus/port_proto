@@ -1,10 +1,42 @@
 /* UTILS */
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script&display=swap');
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.fade-background{
+  background-color: #ffffffa0;
+}
+.fade-background-t{
+  -webkit-transition: background-color .3s ease-in;
+  -moz-transition: background-color .3s ease-in;
+  -o-transition: background-color .3s ease-in;
+  transition: background-color .3s ease-in;
+}
+.ovf-hidden{ overflow: hidden !important; }
+.o-0{opacity: 0;pointer-events: none}
+.o-t{
+  -webkit-transition: opacity .3s ease-in;
+  -moz-transition: opacity .3s ease-in;
+  -o-transition: opacity .3s ease-in;
+  transition: opacity .3s ease-in;
+}
 .b-white{
   background-color: white !important;
 }
 .b-center{ background-position: center !important }
 .b-size-75{ background-size: 75% !important; }
              
+.absolute-wrapper{
+  /*position: absolute; 
+  top: 0;
+  right: 0;
+  padding: 15px 10px;
+  z-index: 1030;
+  overflow-y: scroll; */
+}             
 
 .toast-wrapper{
   position: absolute; 
@@ -31,8 +63,11 @@
 }*/
 
 /* ABOUT*/
+.cover-heading{
+  font-family: 'Oleo Script', sans-serif;
+}
 
-      #about>div{
+      .face-card{
         max-width: 333px;
       }
       #about h2{
@@ -44,7 +79,7 @@
         }
       }
       @media (min-width: 768px){
-      #about>div{
+      .face-card{
         max-width: 690px;
       }
       }
@@ -67,6 +102,25 @@
         font-size: 1.03rem;
       }
 
+    .name-d{
+      display: none;
+    }
+  @media (min-width: 768px){
+    .name-d{
+      display: inline-block;
+    }
+    .name-d-2{
+      display:none;
+    }
+  }
+  @media (min-width: 1370px){
+    .name-d{
+      display:none;
+    }
+    .name-d-2{
+      display: inline-block;
+    }
+  }
 
 .faux-img-cards{
 	display: block;
@@ -110,7 +164,7 @@ a:hover:not(.b-0), .bg-dark a:active:not(.b-0), .bg-dark a:focus:not(.b-0) {
 }
 
 a.nav-link.py-2.mx-2 {
-    max-width: 120px;
+    /*max-width: 120px;*/
     margin-left: auto !important;
 }
 
@@ -150,6 +204,9 @@ section{
 
 
 /* PROJECTS */
+.container-projects{
+  position: relative;
+}
 .container-projects .card{
   border: none;
   background-color: transparent;
@@ -325,7 +382,7 @@ h2{
 
 
 	a.nav-link.py-2.mx-2 {
-	    max-width: 100px;
+	    /*max-width: 100px;*/
 	    margin-left: unset !important;
 	}
 }
