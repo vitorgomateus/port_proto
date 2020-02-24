@@ -32,11 +32,21 @@ var projects_obj = {
     {
       src: "res/img/winegrid-adobe-logo.png",
       alt: "Winegrid product logo",
-      text: "Adobe XD Link",
+      text: "Adobe XD Prototype",
       link: {
         type:"axd",
         href: "https://xd.adobe.com/view/25bdfd92-4b17-4a25-71a9-c02c1daecb0c-538c/",
         icon:"fa fa-external-link-alt"
+      }
+    },
+    {
+      src: "res/img/timer-selection-ui.webp",
+      alt: "Screen capture of a frequency selector interface",
+      text: "Frequency Selector",
+      link: {
+        type: "yt",
+        href: "res/img/big/timer-selection-ui.mp4",
+        icon: "fa fa-play-circle"
       }
     }]
   },
@@ -47,7 +57,7 @@ var projects_obj = {
     sub_title: "Project for Master's dissertation",
     time_text: "2019",
     description: 
-    "This project studied the potential contribution of multimedia technology"+
+    "This project studied the potential contribution of multimedia technology "+
     "for a timebanking community in Santa Maria da Feira, Portugal. "+
     "As a proof of concept, two prototypes were developed for a majorly senior community.",
     full_description: 
@@ -280,7 +290,15 @@ var projects_obj = {
  * * website  -web
  * 
 */
-
+window.onpopstate = function(e){
+        console.log("popState",e);
+    if(!e.state){
+        //document.getElementById("content").innerHTML = e.state.html;
+        //document.title = e.state.pageTitle;
+        console.log("popStateE",e);
+        closeText();
+    }
+};
 /*
   {
     src: "res/img/8_80_thumbnail_3_x300.png",
@@ -301,6 +319,7 @@ var projects_obj = {
 */
 var temporary_content_class = 'cgc';
 function openText(ref){
+  if(!ref)return false;
   var tracker = null;
     if ("ga" in window) {
         tracker = ga.getAll()[0];
@@ -332,6 +351,8 @@ function openText(ref){
     $('.'+temporary_content_class).removeClass('o-0');
     window.scrollTo(0,0);
   },500);
+
+  history.pushState({hash:"#"+ref}, "", "#"+ref);
 }
 function closeText(){
   //d-flex flex-column justify-content-between
@@ -453,8 +474,7 @@ $.each(projects_obj, function(k,proj){
 });
 
 projects_wrapper.append(appendable);
-//;( function( $ ) {
 
-  //$( '.swipebox' ).swipebox();
-
-//} )( jQuery );
+$(document).ready(function(){
+  openText(window.location.hash.substring(1));
+});

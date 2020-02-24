@@ -12,7 +12,7 @@
 1. Toast ~~*It would mean a lot to me if you could give me some feedback*~~
 2. Menu *Give Feedback*
  */
- var tracker = null;
+var tracker = null;
 if ("ga" in window) {
     tracker = ga.getAll()[0];
 }else{
