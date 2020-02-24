@@ -301,6 +301,16 @@ var projects_obj = {
 */
 var temporary_content_class = 'cgc';
 function openText(ref){
+  var tracker = null;
+    if ("ga" in window) {
+        tracker = ga.getAll()[0];
+    }else{
+      console.log("ga error");
+    }
+    if(tracker)
+        tracker.send('event', 'Interaction', 'bdtfeira', 'Read More');
+
+
   projects_container.addClass('fade-background fade-background-t');
   projects_container.children().addClass('o-t');
   projects_container.children().addClass('o-0');
@@ -322,7 +332,6 @@ function openText(ref){
     $('.'+temporary_content_class).removeClass('o-0');
     window.scrollTo(0,0);
   },500);
-
 }
 function closeText(){
   //d-flex flex-column justify-content-between
