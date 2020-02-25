@@ -20,7 +20,7 @@ if ("ga" in window) {
 }
  var feedback = {
   result: null,
-  initial_timer: 6000,
+  initial_timer: 12000,
   containerParent : null,
   menuParent : null,
   menu_button : null,

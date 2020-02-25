@@ -8,7 +8,9 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'UA-156554308-1');
+      gtag('config', 'UA-156554308-1',{
+        'custom_map': {'dimension1': 'entry_point'}
+      });
     </script>
 
   <meta charset="utf-8">
@@ -448,8 +450,9 @@
       if(tracker)
         tracker.set('dimension1', value);
     });*/
-    ga('set', 'dimension1', value);
-    ga('send', 'pageview');
+    //ga('set', 'dimension1', value);
+    //ga('send', 'pageview');
+gtag('event', 'entry_point_event', {'dimension1': value});
   });
 
   function searchToObject() {
