@@ -436,20 +436,18 @@
     //ga('set', 'dimension1', value);
 
 
+    ga(function(tracker) {
+      // Logs the tracker created above to the console.
+      console.log("setting on tracker", value, tracker);
     var tracker = null;
     if ("ga" in window) {
         tracker = ga.getAll()[0];
     }else{
       console.log("ga error");
     }
-    ga(function(tracker) {
-      // Logs the tracker created above to the console.
-      console.log("setting on tracker", value, tracker);
       if(tracker)
         tracker.set('dimension1', value);
     });
-    if(tracker)
-      tracker.set('dimension1', value);
   });
 
   function searchToObject() {
