@@ -12,12 +12,6 @@
 1. Toast ~~*It would mean a lot to me if you could give me some feedback*~~
 2. Menu *Give Feedback*
  */
-var tracker = null;
-if ("ga" in window) {
-    tracker = ga.getAll()[0];
-}else{
-  console.log("ga error");
-}
  var feedback = {
   result: null,
   initial_timer: 12000,
@@ -37,8 +31,13 @@ if ("ga" in window) {
     'only curious': 'Feel free to give me your opinion.'
     };
     //https://stackoverflow.com/questions/15744042/events-not-being-tracked-in-new-google-analytics-analytics-js-setup
-    if (tracker)
-        tracker.send('event', 'Feedback', response, 'Feb 2020');
+    //if (tracker)
+     //   tracker.send('event', 'Feedback', response, 'Feb 2020');
+
+    gtag('event', 'Feedback_hit', {
+      'event_category': 'feedback',
+      'event_label': response
+    });
     //ga('send', 'event', 'Feedback', response, 'Feb 2020');
     /*
     this.result = ga('send', {

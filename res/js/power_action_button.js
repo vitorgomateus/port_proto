@@ -56,6 +56,9 @@ $('body').append("<!-- DOWNLOAD PDF-->"+
         //console.log('pa_backdrop');
         closePowerActionBtn();
     });
+    pa_link.click(function(){
+      gtag('event', 'Download PDF');
+    });
     /* don't do anything
     btnHover.focusout(function(){
         console.log('focusout');
