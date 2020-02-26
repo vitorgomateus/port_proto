@@ -434,6 +434,8 @@
         value = values[params.a];
       else
         value = params.a;
+    else if(location.hash)
+      value = location.hash.substring(1);
     //console.log("a="+value);
     //ga('set', 'dimension1', value);
 
@@ -452,7 +454,7 @@
     });*/
     //ga('set', 'dimension1', value);
     //ga('send', 'pageview');
-gtag('event', 'entry_point_event', {'dimension1': value});
+  gtag('event', 'entry_point_event', {'dimension1': value});
   });
 
   function searchToObject() {
