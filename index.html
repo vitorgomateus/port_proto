@@ -434,8 +434,10 @@
         value = values[params.a];
       else
         value = params.a;
-    else if(location.hash)
-      value = location.hash.substring(1);
+    else if(location.hash){
+      var h = location.hash.substring(1);
+      value = values.hasOwnProperty(h) ? values[h] : h;
+    }
     console.log("a="+value);
     //ga('set', 'dimension1', value);
 
