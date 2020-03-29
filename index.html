@@ -403,8 +403,7 @@
       return;
     var params = searchToObject();
     var value = 'unknown';
-    //if(params.length>1)
-    //  return;
+    var not_hashes = ['about', 'work', 'education', 'contacts'];
     var valuesIdx = {
       '0':'global',
       '1':'friends',
@@ -434,7 +433,7 @@
         value = values[params.a];
       else
         value = params.a;
-    else if(location.hash){
+    else if(location.hash && !not_hashes.index(location.hash.substring(1))){
       var h = location.hash.substring(1);
       value = values.hasOwnProperty(h) ? values[h] : h;
     }
