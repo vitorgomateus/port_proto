@@ -30,13 +30,18 @@ body{
 .b-size-75{ background-size: 75% !important; }
              
 .absolute-wrapper{
+  max-width: 600px;
   /*position: absolute; 
   top: 0;
   right: 0;
   padding: 15px 10px;
   z-index: 1030;
   overflow-y: scroll; */
-}             
+}         
+.absolute-wrapper p, .absolute-wrapper h6{
+  text-indent: 30px;
+  text-align: justify;
+}    
 
 .toast-wrapper{
   position: absolute; 

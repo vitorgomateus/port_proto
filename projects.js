@@ -10,10 +10,55 @@ var projects_obj = {
     title: "Winegrid",
     sub_title: "The Winegrid platform for the company Watgrid",
     time_text: "2019",
-    description: 
-    "The platform to be developed for Winegrid was quite challenging as it encompassed a complex information architecture "+
-    "which generated a gap with the user's mental model. In order to test and allow common ground of understanding between the team members "+
-    "a hi-fi prototype was made in Adobe XD. This made it easier to guess implementation efforts and the validity of some of the functionalities.",
+    description:
+    "The platform to be developed for Winegrid was quite challenging "+
+    "as it encompassed a complex information architecture which generated a gap "+
+    "with the user's mental model. In order to test and allow common ground of understanding "+
+    "between the team members a hi-fi prototype was made in Adobe XD. "+
+    "This made it easier to guess implementation efforts and the validity of some of the functionalities.",
+    full_description: 
+    "<h6> Product</h6>"+
+    "<p>Watgrid's product, Winegrid, was a very interesting project "+
+    "and I'm very glad I got to be part of it during my master's. "+
+    "It is a groundbreaking technology, with a complex information architecture. "+
+    "They develop and produce sensors to monitor wine production in real time, "+
+    "alongside a SaaS platform to control their devices. "+
+    "I was working as a UX designer, supporting the platform's development team.</p>"+
+
+    "<br><h6>UX Challenges</h6>"+
+    "<p>The fact that it was a company just popping out of start-up status, "+
+    "meant there was still some distance between the engineer's mental model, "+
+    "and that which would make sense for the final users. "+
+    "Also, few of the engineers understood how to produce wine "+
+    "and none of them how a full sized industrial production of wine works. "+
+    "So it was necessary to understand the differences, "+
+    "create a new mental model and reflect this on the platform itself. "+
+    "For about a year this was a work in progress, as the platform was already up and running. "+
+    "I studied, designed and developed, also as new features were being introduced "+
+    "to the platform on a regular basis. Gladly, new investments were made that changed our game. </p>"+
+
+    "<br><h6>Development Challenges</h6>"+
+    "<p>Most notoriously, I designed and developed a selection element that faced a challenged, "+
+    "and of which I am quite satisfied. The user needs to be able to select "+
+    "the daily reading frequency of each sensor, but that can't be more that once every thirty minutes, "+
+    "and it has to be in equal intervals throughout the day. These were technical constraints. "+
+    "The user should also be able to select when the first read of the day was to happen. "+
+    "In order to avoid explaining to the user all the necessary, and to avoid error, "+
+    "it was necessary for the affordance of this element to enforce all of this, "+
+    "and be clear at the same time. So a slider for the frequency was chosen, "+
+    "alongside a scheduler that allowed to select the initial time and view all the "+
+    "other consecutive schedule readings. To further ensure readability, "+
+    "a clarifying human readable sentence was output dynamically with the selection. "+
+    "This was developed in Angular and later translated into Jquery.</p>"+
+
+    "<br><h6>Work in Graphical Design and Marketing</h6>"+
+    "<p>Besides working as a UX Designer, I also supported the marketing team, "+
+    "mostly with graphical design. The branding of the company was also not solidified, "+
+    "so this was a challenging process as well. Most notoriously, "+
+    "I designed a quick guide for users, in a single sheet of A4, "+
+    "to go with every shipped device. It used only iconography, "+
+    "so that translated versions were not necessary, and a QR Code directed for further clarifications, "+
+    "although this was reported as not used. I also produced an instructional video and maintained the website's activity.</p>",
     badges: 
     [
       "UI design",
@@ -61,37 +106,102 @@ var projects_obj = {
     "for a timebanking community in Santa Maria da Feira, Portugal. "+
     "As a proof of concept, two prototypes were developed for a majorly senior community.",
     full_description: 
-      "The important detail to note in this project is the way the users actually see and use their system. "+
-      "A system with an alternative currency mechanism based on time, promises more financial resilience to the individual, "+
-      "and recognition of their values in a more equilitarian way. "+
-      "Maybe a strong stroke against the current of selfish capitalism and consumerism. "+
-      "However, this might not be the case. "+
-      "In this community's motivation, underlies a different mentality, not to obtain goods and services, but to contribute. "+
-      "There's a true sense of colaboration, not so much in the production of value, but in being part of the community."+
-      "<hr>"+
-      "Originally, the notion was that it was necessary to improve on efficiency, since there was no online platform to mediate the exchanges."+
-      " As research was carried out, it became clear that it functions efficiently enough. Even without the platform. "+
-      "Nevertheless, there is a imbalance in the credits because the participants felt unease "+
-      "with the idea of requesting for help. Because these projects are born from the intention "+
-      "to help and build the community, the framing of the activity establishes the exhanged services as voluntary work or solidarity."+
+      "<h6># Collaborative Economy</h6>"+
+      "<p>The Collaborative Economy is a phenomenon of the recent decade, "+
+      "where new and old habits of exchange were developed and re-discovered "+
+      "in the digital realm. Most notoriously - new methods of creating value "+
+      "collaboratively; making use of inert value and sharing goods, services "+
+      "and even time - have created a new highly valued market, challenged policies, "+
+      "and promoted a more sustainable way for people to face their daily challenges. "+
+      "There are also companies that tag along with the promises of social, "+
+      "economic and ecological sustainability, but fail to deliver and "+
+      "end up just exploiting members of their digitally created communities "+
+      "for their own gain.</p>"+
+      
+      "<br><h6># Time Banks</h6>"+
+      "<p>In the meantime, there's an idea that has existed far before, "+
+      "and that is used mostly for social rehabilitation and "+
+      "economic self-reliance in smaller communities. We're talking about "+
+      "time-banks, where people exchange their time, valuing everyone's "+
+      "time equally. So an hour from a plumber is as valuable as an hour "+
+      "from a tutoring mathematician. One would request a service "+
+      "and \"pay\" the person in time-credits, equivalent to the time "+
+      "spent in providing it. And this person will be able to exchange "+
+      "similarly with other members.</p>"+
+      
+      "<br><h6># Time Banks in Portugal</h6>"+
+      "<p>In Portugal, Time Banks have existed for a while and have a "+
+      "few slightly specific rules. Each agency, consisting usually of "+
+      "easily below 200 members, should validate each member upon joining, "+
+      "through a personal interview. The agency also intermediates each "+
+      "exchange, to promote that all members have an equal opportunity to "+
+      "contribute. This network, in Portugal, has very little digital "+
+      "support for their members and coordinators.</p>"+
+      
+      "<br><h6># A different definition of value</h6>"+
+      "<p>This system is based on a marxist conception of value, of "+
+      "which modern notions have undermined, and probably wouldn't be a "+
+      "system sustainable on a large scale, although something similar "+
+      "exists spanning through the United Kingdom. This system's value lies "+
+      "in small communities, and ususally undermined groups of society, "+
+      "strengthening social ties, their notion of self-worth, and overall "+
+      "health of the individuals. </p>"+
+      
+      "<br><h6># Idea</h6>"+
+      "<p>Contrasting the digital development of modern Collaborative "+
+      "Economy platforms, with the actual social sustainability contribution "+
+      "of Time banks in Portugal, this project took to study and develop "+
+      "a prototype of a platform for Time Banks in Portugal, collaborating "+
+      "with the agency of Santa Maria da Feira. This community was chosen "+
+      "for being very dynamic and with a very stable organization, a strong "+
+      "sense of belonging between members, and also, for the convenience of "+
+      "proximity.</p>"+
+      
+      "<br><h6># Challenges</h6>"+
+      "<p>One of the biggest challenges was lining up with how they value "+
+      "this network. The value in belonging was not so much in obtaining "+
+      "services and saving money, as one might expect, although a lot of "+
+      "value could be obtained from here. Food, home maintenance services, "+
+      "tutoring, transportation, dance/yoga/painting classes etc... The main "+
+      "motivation was to be able to participate and underlyingly feel valued, "+
+      "and most times even just to have company. This makes sense as most of "+
+      "the more active members are retirees. This was possible to realize "+
+      "through questionnaires and also visits to the community with conversations "+
+      "over tea, getting to know if there was any community spirit, how "+
+      "some of them joined, some particular situations, and how the agency "+
+      "itself functions. The questionnaires aimed at understanding their "+
+      "motivations, current use of technology and foreseable usage of a "+
+      "digital platform for the Time Bank.</p>"+
+
+      "<p>Another challenge was to establish the contribution that digital "+
+      "technologies might have to help them with their main problem: there's "+
+      "a higher tendency in members offering services than requiring them. "+
+      "Two conclusions were obtained in regard to this issue. The literary "+
+      "study established that changing the way their activity was framed by "+
+      "their internal and external discourse would make a significant difference. "+
+      "The empirical study established that a simple and familiar interface "+
+      "to choose and \"purchase\" services would motivate members to request "+
+      "more exchanges. </p>"+
       "<blockquote class='blockquote my-4 mx-5'>"+
-      "\"If I need a ride somewhere, I don't request from the TimeBank, I take a cab.\""+
+      "\"If I need a ride somewhere, I don't request from the TimeBank, "+
+      "I take a cab.\""+
       "<footer class='blockquote-footer'>a timebank participant*</footer>"+
       "</blockquote>"+
-      "With this issue nailed down, it was clear that a catalogue website to easily choose and request services, "+
-      "could go a long way in establishing a new perspective and to dismantle some prejudice."+
-      "Although resources were short to fulfill the final product, the usability tests were a positive proof of concept."+
+      
+      "<br><h6># Prototypes</h6>"+
+      "<p>Two prototypes were eventually developed and tested, with "+
+      "different purposes. A first one in Wordpress to test the "+
+      "technology's reliability, as the maintenance of the platform "+
+      "should not require technical capacity. And a second on in Adobe XD "+
+      "to validate an established design and proof of concept.</p>"+
+      "<p>Results were certainly positive, and this project might still "+
+      "come to fulfilled fruition.</p>"+
       "<blockquote class='blockquote my-4 mx-5'>"+
-      "\"I never make any requests, but since it's this easy, I'll definitely start making some.\""+
+      "\"I never make any requests, but since it's this easy, I'll "+
+      "definitely start making some.\""+
       "<footer class='blockquote-footer'>another timebank participant*</footer>"+
       "</blockquote>"+
       "<hr>"+
-      "The intial purpose of this project was to explore in which ways could technolgy contribute "+
-      "to these intitiatives. In that sense, research started from querying participants "+
-      "and coordinators to understand what are their motivations, "+
-      "what technology they use and have interst in using, and what difficulties they could identify. "+
-      "This questionaires and interviews unveiled the most important information."+
-      "A prototype was developed to validate the conclusions obtained, as well..."+
       "<p><br><i style='font-size:80%'>*not verbatim</i></p>",
     badges: 
     [
@@ -291,11 +401,11 @@ var projects_obj = {
  * 
 */
 window.onpopstate = function(e){
-        console.log("popState",e);
+        //console.log("popState",e);
     if(!e.state){
         //document.getElementById("content").innerHTML = e.state.html;
         //document.title = e.state.pageTitle;
-        console.log("popStateE",e);
+        //console.log("popStateE",e);
         closeText();
     }
 };
@@ -327,7 +437,7 @@ function openText(ref){
       console.log("ga error");
     }
     if(tracker)
-        tracker.send('event', 'Interaction', 'bdtfeira', 'Read More');
+        tracker.send('event', 'Interaction', 'ref', 'Read More');
 
 
   projects_container.addClass('fade-background fade-background-t');
@@ -336,12 +446,13 @@ function openText(ref){
   var content ="";
 
   content +=
-  "<div class='"+temporary_content_class+" absolute-wrapper py-5 px-2 o-t o-0'>"+
+  "<div class='"+temporary_content_class+" absolute-wrapper py-5 px-2 mx-auto o-t o-0'>"+
   "<h2>"+projects_obj[ref].title+"</h2>"+
   "<p>"+projects_obj[ref].description+"</p>"+
   "<p class='text-center' style='font-size:25px'>§</p>"+
-  "<p>"+projects_obj[ref].full_description+"</p>"+
-  "<div class='text-right'><button class='btn btn-light' onclick='closeText()'>Cool</button></div>"+
+  //"<p>"+projects_obj[ref].full_description+"</p>"+
+  ""+projects_obj[ref].full_description+""+
+  "<div class='text-right'><button class='btn btn-light' onclick='closeText(\"proj-"+ref+"\")'>Cool</button></div>"+
   "</div>";
   
   projects_container.append(content);
@@ -354,7 +465,7 @@ function openText(ref){
 
   history.pushState({hash:"#"+ref}, "", "#"+ref);
 }
-function closeText(){
+function closeText(hash){
   //d-flex flex-column justify-content-between
   $('.'+temporary_content_class).addClass('o-0');
   //Reinstante visibility in the previous content
@@ -366,6 +477,8 @@ function closeText(){
     //destroy temporary children
     $('.'+temporary_content_class).remove();
     projects_container.removeClass('fade-background-t');
+    if(hash)
+    location.hash = "#" + hash;
   },300);
 }
 
