@@ -433,11 +433,14 @@
         value = values[params.a];
       else
         value = params.a;
-    else if(location.hash && !not_hashes.index(location.hash.substring(1))){
+    else if(location.hash && !not_hashes.index(location.hash.substring(1))) {
       var h = location.hash.substring(1);
       value = values.hasOwnProperty(h) ? values[h] : h;
+    }else{
+      return;
     }
-    console.log("Hello "+value+ ". Welcome.");
+    if( Object.prototype.toString.call(value) == '[object String]' && value.length > 2)
+      console.log("Hello "+value+ ". Welcome.");
     //ga('set', 'dimension1', value);
 
 
@@ -455,7 +458,7 @@
     });*/
     //ga('set', 'dimension1', value);
     //ga('send', 'pageview');
-  gtag('event', 'entry_point_event', {'dimension1': value});
+    gtag('event', 'entry_point_event', {'dimension1': value});
   });
 
   function searchToObject() {
